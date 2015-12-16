@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>plexiti - specs, checks and docs</title>
-    <link>http://plexiti.com/</link>
-    <description>Recent content on plexiti - specs, checks and docs</description>
+    <title>Dmn on plexiti - specs, checks and docs</title>
+    <link>http://plexiti.com/categories/dmn/</link>
+    <description>Recent content in Dmn on plexiti - specs, checks and docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Dec 2015 15:51:20 +0100</lastBuildDate>
-    <atom:link href="http://plexiti.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://plexiti.com/categories/dmn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Camunda BPM 7.4 Roadshow!</title>
