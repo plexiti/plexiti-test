@@ -60,8 +60,8 @@
 
 <section class="hgroup">
      <div class="container">
-          <h1>Camunda BPM 7.4 Roadshow!</h1>
-          <h2> Im Januar kann man die neuen Features in Camunda BPM 7.4 an sieben Terminen in Deutschland, der Schweiz und Österreich live erleben. </h2>
+          <h1>Camunda BPM Assert 1.0 released!</h1>
+          <h2> Seit einiger Zeit schon experimentieren wir mit Assertions für Camunda BPM - rechtzeitig zum 1. Geburtstag ist nun eine stabile Version verfügbar. </h2>
           <ul class="breadcrumb pull-right">
      <li><a href='http://plexiti.github.io/plexiti/'>Home</a> </li>
      <li>
@@ -79,36 +79,61 @@
                <div id="leftcol" class="col-sm-8 col-md-8">
                     <article class="post">
                          <div class="post_content">
-                              <p>Am 27. Jänner 2016 wird die &ldquo;Camunda BPM 7.4 Release Roadshow&rdquo; in Wien Station
-machen - als Abschluß einer <a href="http://www.bpm-guide.de/2015/12/08/camunda-bpm-7-4-roadshow/" title="Camunda BPM 7.4 Roadshow">Veranstaltungsserie</a> in Berlin, Hamburg,
-Düsseldorf, Frankfurt, München, Zürich und eben Wien.</p>
+                              
 
-<p><a href="http://www.bpm-guide.de/2015/12/08/camunda-bpm-7-4-roadshow/" title="Camunda BPM 7.4 Roadshow"><img src="../camunda-bpm-release-roadshow.png" alt="Camunda BPM Release Roadshow" /></a></p>
+<p>Die kleine Community Extension &ldquo;camunda-bpm-assert&rdquo; möchte es ein grosses Stück einfacher machen Tests für BPMN Prozessdefinitionen zu schreiben und diese gegen <a href="http://camunda.org">camunda BPM</a> auszuführen. Dazu wird - basierend auf Joel Costigliola&rsquo;s <a href="http://joel-costigliola.github.io/assertj/">AssertJ</a> - ein Set an Process Engine Assertions zur Verfügung gestellt. Diese können sowohl mit JUnit, aber auch in völlig anderen Testumgebungen eingesetzt werden. Außerdem unterstützt eine Reihe an kleinen Helper-Methoden bei der Navigation durch den zu testenden Prozesspfad. <strong>Das Motto: besser lesbarer Code - weniger Spaghetti Tests!</strong></p>
 
-<p>&ldquo;Camunda&rdquo; ist eine Open-Source-Software zur Automatisierung von
-Geschäftsabläufen und -entscheidungen. Was das heißt? Wenn ihr z.B. auf
-<a href="https://www.zalando.de/" title="Zalando AG">Zalando</a> Schuhe oder so bestellt, dann benötigt es natürlich einen im Detail
-ziemlich ausgefuchsten Ablauf, damit die Schuhe auch den Weg zu euch finden -
-und dafür nutzt Zalando bereits - richtig: <a href="http://camunda.org/" title="Camunda BPM Platform">Camunda</a>.</p>
+<p><img src="../camunda-bpm-assert-released.png" alt="Less Spaghetti Tests" /></p>
 
-<p>Und angeblich kann Camunda einen auch in 2 Tagen zum Mars (und zurück!) bringen.
-Aber zu all diesen Versprechen wird uns dann der Geschäftsführer Jakob Freund
-selbst mehr erzählen können: da ich mein Berliner Partnerunternehmen Camunda
-tatsächlich schon fast seit seinen Gründungstagen kenne, freue ich mich
-besonders, dass beide Gründer, Jakob Freund und Bernd Rücker, ihren Weg nach
-Wien ins Museumsquartier finden werden.</p>
+<p>Urspünglich eine gemeinsam von <a href="http://rafael.cordones.me">Rafael Cordones</a> und mir in die Welt gesetzte und von Jan Galinski und Simon Zambrovski (beide <a href="http://www.holisticon.de">Holisticon</a>) tatkräftig unterstützte Idee, konnte ich mir nun die nötige Zeit nehmen, den experimentellen Code auf den Kern zu reduzieren und vor allem zu testen: &ldquo;Never forget to test the test code!&rdquo; :-) Das Ergebnis ist nun zugänglich über camundas maven repo als</p>
 
-<p>Die gesamte Agenda und die Anmeldung für Wien findet sich hier:</p>
+<h1 id="camunda-bpm-assert-1-0-fork-me-on-github-https-github-com-camunda-camunda-bpm-assert:016e42a61ba5fc59f770450ea8567630">camunda-bpm-assert 1.0 - <a href="https://github.com/camunda/camunda-bpm-assert">Fork me on GitHub</a></h1>
 
-<p><a href="https://network.camunda.org/meetings/67" title="Camunda BPM 7.4 Roadshow Agenda für Wien">https://network.camunda.org/meetings/67</a></p>
+<p>Man benötigt lediglich einen statischen Import…</p>
 
-<p>Die Veranstaltung ist kostenlos, die Zahl der Teilnehmer aber begrenzt. Wenn
-Euch das Thema interessiert - am besten also gleich anmelden, bevor die Plätze
-weg sind!</p>
+<pre><code>import static org.camunda.bpm.engine.test.assertions.ProcessEngineTests.*;
+</code></pre>
+
+<p>… und kann schon damit loslegen neue Tests zu schreiben oder bestehende Tests zu ändern. Es gibt aber keinen Zwang, einer bestimmten Test-&ldquo;Philosophie&rdquo; zu folgen oder bestehende Tests in einem Schritt zu &ldquo;migrieren&rdquo;. &ldquo;Mix and match it&rdquo; as you like, zB um eine Map an Prozessvariablen zu übergeben:</p>
+
+<pre><code>ProcessInstance pi = runtimeService().startProcessInstanceByKey(
+  &quot;camunda-testing-job-announcement&quot;,
+  withVariables(&quot;jobAnnouncementId&quot;, jobAnnouncement.getId())
+);
+</code></pre>
+
+<p><img src="../process-instance-under-test.png" alt="Zu testende Prozess Instanz" /></p>
+
+<p>Möchte man zB sicherstellen, dass diese hier gezeigte Prozessinstanz</p>
+
+<ul>
+<li>wirklich gestartet wurde…</li>
+<li>… nun beim User Task &ldquo;edit&rdquo; wartet…</li>
+<li>… und einer bestimmten Gruppe, aber noch keiner konkreten Person zugeordnet wurde…</li>
+</ul>
+
+<p>so schreibt man</p>
+
+<pre><code>assertThat(pi).isStarted()
+    .task(&quot;edit&quot;).hasCandidateGroup(&quot;hr-staff&quot;).isNotAssigned();
+</code></pre>
+
+<p>Möchte man diesen Task nun zuweisen und abschliessen, so kann man dafür einige der Helper Methoden nutzen:</p>
+
+<pre><code>claim(task(&quot;edit&quot;), &quot;mary&quot;);
+complete(task(&quot;edit&quot;), withVariables(&quot;finished&quot;, true, &quot;editor&quot;, &quot;mary&quot;));
+</code></pre>
+
+<p>Für diejenigen, die sich hier am Kopf kratzen sollten: die Library merkt sich dazu die letzte Prozess Instanz, auf der in diesem konkreten Test eine Assertion durchgeführt wurde. Es ist aber auch möglich, komplexere Tests mit mehreren &ldquo;kollaborierenden&rdquo; Prozessinstanzen durchzuführen und die jeweils benötigte Instanz den Helper Methoden explizit mitzugeben:</p>
+
+<pre><code>claim(task(&quot;edit&quot;, pi), &quot;mary&quot;);
+</code></pre>
+
+<p>Ein kompletter <strong><a href="https://github.com/camunda/camunda-bpm-assert/blob/master/camunda-bpm-assert/README.md">User Guide</a></strong> mit allen derzeit zur Verfügung stehenden Assertions und Helper Methoden ist online abrufbar. Worauf also warten?-) <strong><a href="https://github.com/camunda/camunda-bpm-assert#getting-started">Get started</a></strong> and… enjoy your upgraded pasta!</p>
 
                          </div>
                     </article>
-                    <p>Martin Schimak, <script>document.write(moment('2015-12-16').locale('de').format('LL'))</script></p>
+                    <p>Martin Schimak, <script>document.write(moment('2014-03-03').locale('de').format('LL'))</script></p>
                </div>
                <div id="sidebar" class="col-sm-4 col-md-4">
   <aside class="widget">
