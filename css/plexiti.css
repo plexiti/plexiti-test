@@ -1,3 +1,14 @@
+.top-bg-color-bar {
+    background-image: url('../img/top-bg-color-bar.png');
+    background-repeat: repeat-x;
+    height: 3px;
+}
+
+.hgroup h1, .hgroup h2 {
+    color: rgba(45, 45, 45, 0.88);
+    font-weight: bold;
+}
+
 .post_content img {
     margin: 14px 0px 28px 0px;
 }
