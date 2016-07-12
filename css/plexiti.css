@@ -4,6 +4,10 @@
     height: 3px;
 }
 
+.hgroup .container {
+    border-bottom: dashed 1px #ccc;
+}
+
 .navbar-brand {
     position: relative;
     overflow: visible !important;
