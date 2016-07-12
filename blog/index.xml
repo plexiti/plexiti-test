@@ -84,7 +84,7 @@ weg sind!&lt;/p&gt;
 
 &lt;p&gt;Urspünglich eine gemeinsam von &lt;a href=&#34;http://rafael.cordones.me&#34;&gt;Rafael Cordones&lt;/a&gt; und mir in die Welt gesetzte und von Jan Galinski und Simon Zambrovski (beide &lt;a href=&#34;http://www.holisticon.de&#34;&gt;Holisticon&lt;/a&gt;) tatkräftig unterstützte Idee, konnte ich mir nun die nötige Zeit nehmen, den experimentellen Code auf den Kern zu reduzieren und vor allem zu testen: &amp;ldquo;Never forget to test the test code!&amp;rdquo; :-) Das Ergebnis ist nun zugänglich über camundas maven repo als&lt;/p&gt;
 
-&lt;h1 id=&#34;camunda-bpm-assert-1-0-fork-me-on-github-https-github-com-camunda-camunda-bpm-assert:016e42a61ba5fc59f770450ea8567630&#34;&gt;camunda-bpm-assert 1.0 - &lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert&#34;&gt;Fork me on GitHub&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;camunda-bpm-assert-1-0-fork-me-on-github-https-github-com-camunda-camunda-bpm-assert&#34;&gt;camunda-bpm-assert 1.0 - &lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert&#34;&gt;Fork me on GitHub&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;Man benötigt lediglich einen statischen Import…&lt;/p&gt;
 

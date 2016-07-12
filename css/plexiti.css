@@ -10,6 +10,55 @@
     max-width: 250px;
 }
 
+.affix {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.affix-top {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar .nav li a {
+    text-transform: lowercase;
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+#TableOfContents ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#TableOfContents li span {
+    display: block;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#TableOfContents a {
+    cursor: hand;
+    display: block;
+    height: 45px;
+    line-height: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 360px; /* TODO Dynamic according to display */
+}
+
+#TableOfContents li > a:hover, .nav > li > a:focus {
+    background-color: #eeeeee;
+}
+
+#TableOfContents li.active {
+    border-left: solid 1px #428bca;
+    background-color: #eeeeee;
+}
+
+
 .logo_subtitle {
     position: absolute;
     bottom: -10px;
