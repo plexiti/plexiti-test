@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Party on plexiti · business logic blog</title>
+    <title>Party on plexiti</title>
     <link>http://plexiti.github.io/plexiti/categories/party/</link>
-    <description>Recent content in Party on plexiti · business logic blog</description>
+    <description>Recent content in Party on plexiti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Apr 2013 00:00:00 +0000</lastBuildDate>
