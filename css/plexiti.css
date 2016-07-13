@@ -4,6 +4,18 @@
     height: 3px;
 }
 
+.post .hgroup {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: dashed 1px #ccc;
+}
+
+article.post {
+    border-bottom: none;
+}
+
 .hgroup .container {
     border-bottom: dashed 1px #ccc;
 }
