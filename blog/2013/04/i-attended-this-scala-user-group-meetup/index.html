@@ -78,6 +78,12 @@ niemand mehr aus&hellip; wir leben in komplexen &ldquo;social times&rdquo;! :-)<
                               
                          </div>
                     </div>
+                    <script type="text/javascript">
+                         jQuery('#TableOfContents ul').each(function() {
+                              this.className = "nav";
+                         });
+                         jQuery('#TableOfContents ul').prepend("<li><span>Table of Contents</span></li></l><li><a href='#post'>Intro</a></li>");
+                    </script>
                </div>
           </div>
      </section>
@@ -118,10 +124,6 @@ niemand mehr aus&hellip; wir leben in komplexen &ldquo;social times&rdquo;! :-)<
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/restart_theme.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/collapser.js'></script>
 <script type="text/javascript">
-    jQuery('#TableOfContents ul').each(function() {
-        this.className = "nav";
-    });
-    jQuery('#TableOfContents ul').prepend("<li><span>Table of Contents</span></li></l><li><a href='#post'>Intro</a></li>");
     jQuery('#TableOfContents a').click(function() {
         var href = $.attr(this, 'href');
         href = href.replace(/:/g, '\\:');

@@ -49,7 +49,7 @@ article.post {
 
 #TableOfContents li span {
     display: block;
-    height: 35px;
+    min-height: 35px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -57,7 +57,7 @@ article.post {
 #TableOfContents a {
     cursor: hand;
     display: block;
-    height: 45px;
+    min-height: 45px;
     line-height: 25px;
     padding-left: 15px;
     padding-right: 15px;
@@ -72,6 +72,10 @@ article.post {
 #TableOfContents li.active {
     border-left: solid 1px #428bca;
     background-color: #eeeeee;
+}
+
+#TableOfContents li.active a {
+    padding-left: 14px;
 }
 
 

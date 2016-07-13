@@ -76,6 +76,12 @@ upzugraden.&rdquo;</p>
                               
                          </div>
                     </div>
+                    <script type="text/javascript">
+                         jQuery('#TableOfContents ul').each(function() {
+                              this.className = "nav";
+                         });
+                         jQuery('#TableOfContents ul').prepend("<li><span>Table of Contents</span></li></l><li><a href='#post'>Intro</a></li>");
+                    </script>
                </div>
           </div>
      </section>
@@ -116,10 +122,6 @@ upzugraden.&rdquo;</p>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/restart_theme.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/collapser.js'></script>
 <script type="text/javascript">
-    jQuery('#TableOfContents ul').each(function() {
-        this.className = "nav";
-    });
-    jQuery('#TableOfContents ul').prepend("<li><span>Table of Contents</span></li></l><li><a href='#post'>Intro</a></li>");
     jQuery('#TableOfContents a').click(function() {
         var href = $.attr(this, 'href');
         href = href.replace(/:/g, '\\:');
