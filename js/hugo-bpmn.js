@@ -45,6 +45,53 @@ function renderBpmn(index, element) {
   }, 'text');
 }
 
+function renderCmmn(index, element) {
+  // create unique id for div holding the cmmn
+  var cmmnId = "cmmn-" + (index + 1);
+  // create the div
+  var cmmnDiv = element.append("<div id='" + cmmnId + "'></div>").find("#" + cmmnId);
+  // create the thumbs div
+  var thumbs = element.attr("thumbs");
+  if (thumbs) {
+    cmmnDiv.append("<i class='fa fa-thumbs-" + thumbs + "'>")
+  }
+  // render the svg
+  var viewer = new window.CmmnJS({container: "#" + cmmnId});
+  $.get(element.attr("cmmn"), function (cmmnDiagram) {
+    viewer.importXML(cmmnDiagram, function (err) {
+      if (!err) {
+        // adjust the size of the view box
+        var canvas = viewer.get('canvas');
+        adjustBox(canvas.viewbox(), canvas.viewbox().outer.width);
+        cmmnDiv.attr("style", "height: " + (canvas.viewbox().outer.height) + "px; overflow: visible");
+        cmmnDiv.attr("class", "bjs-asciidoc");
+        // create callout overlays
+        var overlays = viewer.get('overlays');
+        if (element.attr("callouts")) {
+          var callouts = element.attr("callouts").split(',');
+          for (var i = 0; i < callouts.length; ++i) {
+            if (i in callouts) {
+              overlays.add(callouts[i].trim(), {
+                html: '<i class="conum" data-value="' + (i + 1) + '"></i>',
+                position: {
+                  right: 1,
+                  top: -12
+                },
+                show: {
+                  minZoom: 0
+                }
+              });
+            }
+          }
+        }
+        canvas.zoom('fit-viewport');
+      } else {
+        console.log("Error while rendering " + element.attr("cmmn") + ": ", err);
+      }
+    });
+  }, 'text');
+}
+
 function renderDmn(index, element) {
   // create unique id for div holding the dmn
   var dmnId = "dmn-" + (index + 1);
@@ -130,6 +177,11 @@ function renderAll() {
   // iterate over all divs with a bpmn attribute
   bpmnDivs.each(function (index) {
     window.setTimeout(renderBpmn, 0, index, $(this));
+  });
+  var cmmnDivs = $("div[cmmn]");
+  // iterate over all divs with a cmmn attribute
+  cmmnDivs.each(function (index) {
+    window.setTimeout(renderCmmn, 0, index, $(this));
   });
   var dmnDivs = $("div[dmn]");
   // iterate over all divs with a dmn attribute
