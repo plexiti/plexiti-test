@@ -130,6 +130,18 @@ article.post p + div {
     padding-left: 14px;
 }
 
+.bpmn {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px
+}
+
+.bjs-powered-by {
+    bottom: 0px !important;
+    right: 0px !important;
+    height: 65px !important;
+}
+
 .logo_subtitle {
     position: absolute;
     bottom: -10px;

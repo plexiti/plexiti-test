@@ -24,6 +24,8 @@
   <link rel="apple-touch-icon-precomposed" href='http://plexiti.github.io/plexiti/apple-touch-fa-57x57-precomposed.png'>
 
   <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/moment/moment-with-locales.min.js'></script>
+  <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/hugo-bpmn.js'></script>
+  <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/bpmn-js/bpmn-navigated-viewer.min.js'></script>
   <link href='http://plexiti.github.io/plexiti/css/plexiti.css' rel="stylesheet" type="text/css">
 </head>
 <body data-spy="scroll" data-target="#TableOfContents" data-offset="50">
@@ -67,7 +69,7 @@
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
 
-<h1 id="simple-links-and-pictures">Simple Links and Pictures</h1>
+<h1 id="external-links-and-pictures">External Links and Pictures</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer <a href="http://camunda.org/" title="Camunda BPM Platform">adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
@@ -77,11 +79,6 @@
         <img src="http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg" />
     
     
-    <figcaption>
-        <h4>This is a title for the picture</h4>
-        
-    </figcaption>
-    
 </figure>
 
 
@@ -89,7 +86,7 @@
 
 <h1 id="cross-references-tweets">Cross References &amp; Tweets</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetuer <a href="http://plexiti.github.io/plexiti/blog/2015/12/camunda-bpm-release-roadshow/">adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer <a href="http://plexiti.github.io/plexiti/blog/2015/12/camunda-bpm-release-roadshow/" title="Camunda BPM 7.4 Release Roadshow">adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hugo 0.15 will have 30%+ faster render times thanks to this commit <a href="https://t.co/FfzhM8bNhT">https://t.co/FfzhM8bNhT</a>  <a href="https://twitter.com/hashtag/gohugo?src=hash">#gohugo</a> <a href="https://twitter.com/hashtag/golang?src=hash">#golang</a> <a href="https://t.co/ITbMNU2BUf">https://t.co/ITbMNU2BUf</a></p>&mdash; Steve Francia (@spf13) <a href="https://twitter.com/spf13/status/666616452582129664">November 17, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -132,6 +129,15 @@
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
+<h1 id="bpmn-diagrams">BPMN Diagrams</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+<p><div class="bpmn" bpmn="../bpmn/model-from-left-to-right.bpmn"   >
+</div></p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
                               </div>
                          </article>
                          <p>Martin Schimak, <script>document.write(moment('2016-07-13').locale('de').format('LL'))</script></p>
@@ -140,11 +146,12 @@
                          <div class="bs-docs-sidebar hidden-print affix-top" role="complementary" data-spy="affix" data-offset-top="318" data-offset-bottom="405">
                               <nav id="TableOfContents">
 <ul>
-<li><a href="#simple-links-and-pictures">Simple Links and Pictures</a></li>
+<li><a href="#external-links-and-pictures">External Links and Pictures</a></li>
 <li><a href="#cross-references-tweets">Cross References &amp; Tweets</a></li>
 <li><a href="#youtube-and-vimeo-videos">YouTube and Vimeo Videos</a></li>
 <li><a href="#github-gists">GitHub Gists</a></li>
 <li><a href="#speakerdeck-slides">SpeakerDeck Slides</a></li>
+<li><a href="#bpmn-diagrams">BPMN Diagrams</a></li>
 </ul>
 </nav>
                          </div>
