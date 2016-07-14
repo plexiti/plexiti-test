@@ -130,16 +130,30 @@ article.post p + div {
     padding-left: 14px;
 }
 
-.bpmn {
+.bpmn, .dmn {
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 3px
 }
 
 .bjs-powered-by {
-    bottom: 0px !important;
-    right: 0px !important;
+    bottom: -4px !important;
+    right: -1px !important;
     height: 65px !important;
+}
+
+.tjs-controls {
+    display: none;
+}
+
+.bjs-powered-by img {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.dmn-js-logo {
+    top: -1px !important;
+    right: 0px !important;
 }
 
 .logo_subtitle {

@@ -1,4 +1,4 @@
-function renderBpmn(index, element, print) {
+function renderBpmn(index, element) {
   // create unique id for div holding the bpmn
   var bpmnId = "bpmn-" + (index + 1);
   // create the div
@@ -45,15 +45,15 @@ function renderBpmn(index, element, print) {
   }, 'text');
 }
 
-function renderDmn(index, element, print) {
+function renderDmn(index, element) {
   // create unique id for div holding the dmn
-  var dmnId = "dmn-" + (index + 1) + (print ? "-print" : "-screen");
+  var dmnId = "dmn-" + (index + 1);
   // create the div
   var dmnDiv = element.append("<div id='" + dmnId + "'></div>").find("#" + dmnId);
   // create the thumbs div
   var thumbs = element.attr("thumbs");
   if (thumbs) {
-    dmnDiv.append("<a href='../using-our-best-practices/#thumbs' class='icon thumbs'><i class='fa fa-thumbs-" + thumbs + "'></a>")
+    dmnDiv.append("<i class='fa fa-thumbs-" + thumbs + "'>")
   }
   // render the table
   var hideDetails = element.attr("hideDetails") !== "false";
@@ -98,9 +98,6 @@ function renderDmn(index, element, print) {
         });
         //enable thumbs
         thumbs = thumbs ? " " + thumbs : "";
-        dmnDiv.attr("class", "tjs-asciidoc" + thumbs);
-        if (!print)
-          scrollToHash();
       } else {
         console.log("Error while rendering " + element.attr("dmn") + ": ", err);
       }
@@ -128,30 +125,16 @@ function browser() {
   return null;
 }
 
-var locationHash = location.hash;
-var bpmnDivsCount = 0;
-var bpmnDivsAll = 0;
-
-function scrollToHash() {
-  bpmnDivsCount++;
-  if (bpmnDivsCount === bpmnDivsAll && location.hash) {
-    var top = $(location.hash).offset().top;
-    window.scrollTo(0, top);
-  }
-}
-
 function renderAll() {
   var bpmnDivs = $("div[bpmn]");
-  bpmnDivsAll += bpmnDivs.length;
   // iterate over all divs with a bpmn attribute
   bpmnDivs.each(function (index) {
-    window.setTimeout(renderBpmn, index * 100, index, $(this), false);
+    window.setTimeout(renderBpmn, 0, index, $(this));
   });
   var dmnDivs = $("div[dmn]");
-  bpmnDivsAll += dmnDivs.length;
   // iterate over all divs with a dmn attribute
   dmnDivs.each(function (index) {
-    window.setTimeout(renderDmn, index * 100, index, $(this), false);
+    window.setTimeout(renderDmn, 0, index, $(this));
   });
 }
 

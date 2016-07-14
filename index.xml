@@ -67,7 +67,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;p&gt;&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -84,6 +84,15 @@
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;bpmn&#34; bpmn=&#34;../bpmn/model-from-left-to-right.bpmn&#34;   &gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;dmn-decision-tables&#34;&gt;DMN Decision Tables&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;dmn&#34; dmn=&#34;../dmn/customer-discount.dmn&#34;&gt;
 &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
