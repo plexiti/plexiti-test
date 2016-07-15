@@ -16,7 +16,7 @@ article.post {
     border-bottom: none;
 }
 
-article.post a {
+#post article.post a {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -176,11 +176,21 @@ blockquote {
     position: relative;
 }
 
+footer blockquote {
+    padding-top: 5px !important;
+}
+
 blockquote p {
     font-style: italic !important;
     font-weight: normal !important;
     font-size: 20px;
     color: #646464;
+}
+
+footer blockquote p {
+    font-size: 1.5em !important;
+    max-width: 740px;
+    color: #afafaf;
 }
 
 blockquote:before {
@@ -195,6 +205,10 @@ blockquote:before {
     color: #7a7a7a;
 }
 
+footer blockquote:before {
+    color: #9f9f9f;
+}
+
 blockquote cite {
     color: #999999;
     font-size: 14px;
@@ -204,6 +218,10 @@ blockquote cite {
 
 blockquote cite:before {
     content: "\2014 \2009";
+}
+
+footer blockquote cite:before {
+    content: "";
 }
 
 .logo_subtitle {
