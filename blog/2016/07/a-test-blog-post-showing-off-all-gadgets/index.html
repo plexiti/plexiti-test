@@ -28,6 +28,7 @@
   <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/bpmn-js/bpmn-navigated-viewer.min.js'></script>
   <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/cmmn-js/cmmn-navigated-viewer.min.js'></script>
   <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/dmn-js/dmn-viewer.min.js'></script>
+  <script id="dsq-count-scr" src="//plexiti.disqus.com/count.js" async></script>
   <link href='http://plexiti.github.io/plexiti/css/plexiti.css' rel="stylesheet" type="text/css">
   <link href='http://plexiti.github.io/plexiti/js/dmn-js/css/dmn-js.css' rel="stylesheet" type="text/css">
 </head>
@@ -213,8 +214,9 @@
                               this.className = "nav";
                          });
                          var words = Math.ceil( 748  / 184);
+                         var comments = DISQUSWIDGETS.getCount({reset: true});
                          jQuery('#TableOfContents ul').prepend("<li><span>Read this in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "</span></li></l><li><a href='#post'>Intro</a></li>");
-                         jQuery('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus_thread'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;Join the discussion!</a></li>");
+                         jQuery('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus_thread'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;" + comments + "&nbsp;Join the discussion!</a></li>");
                     </script>
                </div>
           </div>
