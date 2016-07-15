@@ -21,6 +21,10 @@ article.post {
     margin-bottom: 45px;
 }
 
+.disqus_link {
+    font-weight: bold;
+}
+
 #post article.post a {
     text-decoration: underline;
     font-weight: bold;
@@ -99,6 +103,7 @@ article.post p + div {
 
 #TableOfContents li span {
     display: block;
+    font-size: 12pt;
     min-height: 35px;
     padding-left: 15px;
     padding-right: 15px;
