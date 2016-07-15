@@ -168,6 +168,14 @@ article.post p + div {
     right: 0px !important;
 }
 
+.cjs-container svg {
+    overflow: visible;
+}
+
+.djs-container {
+    padding-top: 1px;
+}
+
 blockquote {
     border-left: none;
     margin: 0.25em 0;
