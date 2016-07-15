@@ -89,32 +89,53 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;bpmn-process-diagrams&#34;&gt;BPMN Process Diagrams&lt;/h1&gt;
+&lt;h1 id=&#34;bpmn-process-diagrams-with-reference-numbers&#34;&gt;BPMN Process Diagrams with Reference Numbers&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;bpmn&#34; bpmn=&#34;../src/insurance-recourse.bpmn&#34;   &gt;
+&lt;div class=&#34;bpmn&#34; bpmn=&#34;../src/insurance-recourse.bpmn&#34; nr=&#34;intermediate_event_invoice_paid,task-book-payment&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Once the invoice is paid &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; you can (and should!) book the payment.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;dmn-decision-tables-with-reference-numbers&#34;&gt;DMN Decision Tables with Reference Numbers&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;dmn&#34; dmn=&#34;../src/customer-discount.dmn&#34; nr=&#34;utilityColumn:long-time-gold,discount:short-time-bronze&#34;&gt;
 &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Obviously long time gold customer receive the highest discount&amp;hellip;&lt;/p&gt;
 
-&lt;h1 id=&#34;dmn-decision-tables&#34;&gt;DMN Decision Tables&lt;/h1&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;p&gt;&lt;div class=&#34;dmn&#34; dmn=&#34;../src/customer-discount.dmn&#34;&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; so you don&amp;rsquo;t want to be stuck here forever.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;cmmn-case-diagrams&#34;&gt;CMMN Case Diagrams&lt;/h1&gt;
+&lt;h1 id=&#34;cmmn-case-diagrams-with-reference-numbers&#34;&gt;CMMN Case Diagrams with Reference Numbers&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;cmmn&#34; cmmn=&#34;../src/incident-management.cmmn&#34;   &gt;
+&lt;p&gt;&lt;div class=&#34;cmmn&#34; cmmn=&#34;../src/incident-management.cmmn&#34; nr=&#34;investigate-problem-support,investigate-problem-2nd-level-support,investigate-problem-developer&#34;   &gt;
 &lt;/div&gt;
 
 &lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; When investigating a customer problem, the support may decide to &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; involve the second level support &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;3&#34;&gt;&lt;/i&gt; &amp;hellip; or to directly involve the developer.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 </description>

@@ -4,6 +4,36 @@
     height: 3px;
 }
 
+.conum[data-value] {
+    display: inline-block;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, .8);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: .6em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+    top: -2px;
+}
+
+.conum[data-value]:after {
+    content: attr(data-value)
+}
+
+[data-element-id] .conum {
+    left: 3px;
+}
+
+.number[data-element-id] .conum {
+    top: 3px;
+    float: left;
+}
+
 .post .hgroup {
     margin-top: 26px;
     margin-bottom: 26px;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:signavio="http://www.signavio.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" id="sid-fc77cad7-b98f-4d8b-8c04-7379f1ce9e7e" targetNamespace="http://www.signavio.com/bpmn20" exporter="Signavio Process Editor, http://www.signavio.com" exporterVersion="9.2.1" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:signavio="http://www.signavio.com" id="sid-fc77cad7-b98f-4d8b-8c04-7379f1ce9e7e" targetNamespace="http://www.signavio.com/bpmn20" exporter="Camunda Modeler" exporterVersion="1.2.0" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
   <process id="sid-5d7190d8-a604-4a68-a328-d32e9cd65752" isExecutable="false">
     <extensionElements>
       <signavio:signavioDiagramMetaData metaKey="revisionid" metaValue="7467fe09fae14b0fbf2f74aacb595ad2" />
@@ -103,7 +103,7 @@
       <incoming>sid-B648CF31-3B0C-461C-B0BA-FF07592E6E1B</incoming>
       <outgoing>SequenceFlow_0mum4vv</outgoing>
     </task>
-    <task id="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E" name="Book &#10;payment">
+    <task id="task-book-payment" name="Book &#10;payment">
       <extensionElements>
         <signavio:signavioMetaData metaKey="bgcolor" metaValue="#ffffcc" />
         <signavio:signavioMetaData metaKey="lsi" metaValue="" />
@@ -115,7 +115,7 @@
       <incoming>sid-E386E588-842A-4449-8E5F-B7128362FDD7</incoming>
       <outgoing>sid-CDB20CAE-5588-49F0-A690-3C5905587D84</outgoing>
     </task>
-    <sequenceFlow id="sid-CDB20CAE-5588-49F0-A690-3C5905587D84" name="" sourceRef="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E" targetRef="task_close_case" />
+    <sequenceFlow id="sid-CDB20CAE-5588-49F0-A690-3C5905587D84" name="" sourceRef="task-book-payment" targetRef="task_close_case" />
     <intermediateCatchEvent id="intermediate_event_invoice_paid" name="Invoice&#10;paid">
       <extensionElements>
         <signavio:signavioDictionaryLink propertyId="name">
@@ -131,7 +131,7 @@
         <condition xsi:type="tFormalExpression" id="sid-871f6ed2-1091-4846-a711-4134217401b4" />
       </conditionalEventDefinition>
     </intermediateCatchEvent>
-    <sequenceFlow id="sid-E386E588-842A-4449-8E5F-B7128362FDD7" name="" sourceRef="intermediate_event_invoice_paid" targetRef="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E" />
+    <sequenceFlow id="sid-E386E588-842A-4449-8E5F-B7128362FDD7" name="" sourceRef="intermediate_event_invoice_paid" targetRef="task-book-payment" />
     <intermediateCatchEvent id="intermediate_event_objection_period_lapsed" name="Objection&#10;period lapsed">
       <extensionElements>
         <signavio:signavioDictionaryLink propertyId="name">
@@ -210,7 +210,7 @@
           <omgdc:Bounds x="576" y="389" width="90" height="28" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E_gui" bpmnElement="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E">
+      <bpmndi:BPMNShape id="sid-5EBA7AA8-6ED7-464D-8117-F64585A30E4E_gui" bpmnElement="task-book-payment">
         <omgdc:Bounds x="672" y="335" width="100" height="80" />
         <bpmndi:BPMNLabel labelStyle="sid-2279de6c-149d-41cf-96ac-8d2a1fb9aee4">
           <omgdc:Bounds x="871.84283" y="359" width="56.314285" height="24" />

@@ -20,11 +20,11 @@ function renderBpmn(index, element) {
         bpmnDiv.attr("class", "bjs-asciidoc");
         // create callout overlays
         var overlays = viewer.get('overlays');
-        if (element.attr("callouts")) {
-          var callouts = element.attr("callouts").split(',');
-          for (var i = 0; i < callouts.length; ++i) {
-            if (i in callouts) {
-              overlays.add(callouts[i].trim(), {
+        if (element.attr("nr")) {
+          var nr = element.attr("nr").split(',');
+          for (var i = 0; i < nr.length; ++i) {
+            if (i in nr) {
+              overlays.add(nr[i].trim(), {
                 html: '<i class="conum" data-value="' + (i + 1) + '"></i>',
                 position: {
                   right: 1,
@@ -67,11 +67,11 @@ function renderCmmn(index, element) {
         cmmnDiv.attr("class", "bjs-asciidoc");
         // create callout overlays
         var overlays = viewer.get('overlays');
-        if (element.attr("callouts")) {
-          var callouts = element.attr("callouts").split(',');
-          for (var i = 0; i < callouts.length; ++i) {
-            if (i in callouts) {
-              overlays.add(callouts[i].trim(), {
+        if (element.attr("nr")) {
+          var nr = element.attr("nr").split(',');
+          for (var i = 0; i < nr.length; ++i) {
+            if (i in nr) {
+              overlays.add(nr[i].trim(), {
                 html: '<i class="conum" data-value="' + (i + 1) + '"></i>',
                 position: {
                   right: 1,
@@ -108,32 +108,29 @@ function renderDmn(index, element) {
   $.get(element.attr("dmn"), function (dmnDiagram) {
     viewer.importXML(dmnDiagram, function (err) {
       if (!err) {
-        if (element.attr("callouts")) {
+        if (element.attr("nr")) {
           // prepare a small array of callout objects
-          var callouts = [];
-          element.attr("callouts").split(',').forEach(function(entry) {
+          var nr = [];
+          element.attr("nr").split(',').forEach(function(entry) {
             var ent = {
               col: entry.split(':')[0],
               row: entry.split(':')[1]
             };
-            callouts.push(ent);
+            nr.push(ent);
           });
           // hook in callout objects as overlays by using the event bus
           viewer.get('eventBus').on('cell.render', function (event) {
-            for (var i = 0; i < callouts.length; ++i) {
-              if (event.data.column.id === callouts[i].col &&
-                  event.data.row.id === callouts[i].row) {
+            for (var i = 0; i < nr.length; ++i) {
+              if (event.data.column.id === nr[i].col &&
+                  event.data.row.id === nr[i].row) {
                 // avoid to add children several times (don't know why the event fires several times for a cell)
-                if (event.gfx.lastChild.nodeName !== 'B') {
+                if (event.gfx.lastChild.nodeName !== 'I') {
                   // prepare callout elements
-                  var el1 = document.createElement('i');
-                  el1.setAttribute("class", "conum");
-                  el1.setAttribute("data-value", (i + 1).toString());
-                  var el2= document.createElement('b');
-                  el2.appendChild(document.createTextNode('(' + (i + 1) + ')'));
+                  var el = document.createElement('i');
+                  el.setAttribute("class", "conum");
+                  el.setAttribute("data-value", (i + 1).toString());
                   // append callout elements
-                  event.gfx.appendChild(el1);
-                  event.gfx.appendChild(el2);
+                  event.gfx.appendChild(el);
                 };
               }
             }
