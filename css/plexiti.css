@@ -14,6 +14,11 @@
 
 article.post {
     border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.disqus_thread {
+    margin-bottom: 40px;
 }
 
 #post article.post a {
