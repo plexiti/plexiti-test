@@ -128,8 +128,9 @@ Status der vom Projekt-Lead Daniel Meyer angekündigten Contribution:</p>
                          });
                     </script>
                     <script type="text/javascript">
-                         $('#disqus_counter').change(function() {
-                              console.log(this);
+                         $('[href="#disqus"]').click(function() {
+                              DISQUSWIDGETS.getCount({reset: true});
+                              return true;
                          });
                     </script>
                </div>

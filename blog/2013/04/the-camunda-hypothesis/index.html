@@ -122,8 +122,9 @@ IT-basierten Business-Modellen ist sicherlich nicht unter ihnen.&rdquo;</p>
                          });
                     </script>
                     <script type="text/javascript">
-                         $('#disqus_counter').change(function() {
-                              console.log(this);
+                         $('[href="#disqus"]').click(function() {
+                              DISQUSWIDGETS.getCount({reset: true});
+                              return true;
                          });
                     </script>
                </div>
