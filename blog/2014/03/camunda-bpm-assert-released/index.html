@@ -146,7 +146,7 @@ complete(task(&quot;edit&quot;), withVariables(&quot;finished&quot;, true, &quot
 </ul>
 </nav>
                          </div>
-                         <div><a id="disqus_counter" href='#disqus_thread' style='display: none'></a></div>
+                         <div id="disqus_counter"><a href='#disqus_thread' style='display: none'></a></div>
                     </div>
                     <script type="text/javascript">
                          if($("#TableOfContents").length === 0) {
@@ -175,8 +175,7 @@ complete(task(&quot;edit&quot;), withVariables(&quot;finished&quot;, true, &quot
                     </script>
                     <script type="text/javascript">
                          $('#disqus_counter').change(function() {
-                              var counter = this.text();
-                              console.log(counter);
+                              console.log(this);
                          });
                     </script>
                </div>
