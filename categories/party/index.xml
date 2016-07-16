@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Party on plexiti</title>
-    <link>http://plexiti.github.io/plexiti/categories/party/</link>
+    <link>https://plexiti.github.io/plexiti/categories/party/</link>
     <description>Recent content in Party on plexiti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://plexiti.github.io/plexiti/categories/party/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://plexiti.github.io/plexiti/categories/party/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>camunda BPM Launch Party</title>
-      <link>http://plexiti.github.io/plexiti/blog/2013/04/camunda-bpm-launch-party/</link>
+      <link>https://plexiti.github.io/plexiti/blog/2013/04/camunda-bpm-launch-party/</link>
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://plexiti.github.io/plexiti/blog/2013/04/camunda-bpm-launch-party/</guid>
+      <guid>https://plexiti.github.io/plexiti/blog/2013/04/camunda-bpm-launch-party/</guid>
       <description>&lt;p&gt;&amp;ldquo;Es war ein toller Abend, bei dem das fleißige Team rund um camunda BPM
 die Chance hatte, einige der tollen Funktionen und Vorteile der Plattform
 zu zeigen - das alles gefolgt von guten Gesprächen mit den Gästen hinterher.

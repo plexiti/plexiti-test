@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scala on plexiti</title>
-    <link>http://plexiti.github.io/plexiti/categories/scala/</link>
+    <link>https://plexiti.github.io/plexiti/categories/scala/</link>
     <description>Recent content in Scala on plexiti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://plexiti.github.io/plexiti/categories/scala/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://plexiti.github.io/plexiti/categories/scala/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ich war auf diesem Scala User Group Meetup im openForce Büro...</title>
-      <link>http://plexiti.github.io/plexiti/blog/2013/04/i-attended-this-scala-user-group-meetup/</link>
+      <link>https://plexiti.github.io/plexiti/blog/2013/04/i-attended-this-scala-user-group-meetup/</link>
       <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://plexiti.github.io/plexiti/blog/2013/04/i-attended-this-scala-user-group-meetup/</guid>
+      <guid>https://plexiti.github.io/plexiti/blog/2013/04/i-attended-this-scala-user-group-meetup/</guid>
       <description>&lt;p&gt;&amp;ldquo;Cucumber Tests zu schreiben zwingt Dich dazu, so wie der Kunde zu denken &amp;hellip;
 und für den Entwickler, der vielleicht später zu Ihrem Projekt dazustösst,
 ist es so viel leichter sich durch Ihren Prozess zu &lt;em&gt;lesen&lt;/em&gt;.&amp;rdquo;&lt;/p&gt;
