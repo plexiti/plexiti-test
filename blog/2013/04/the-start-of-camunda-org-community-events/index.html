@@ -107,12 +107,17 @@ gefunden zu haben: tdie Sky360 Business Embassy im Herzen !-) von Wien:</p>
                          </div>
                     </div>
                     <script type="text/javascript">
-                         jQuery('#TableOfContents ul').each(function() {
+                         if($("#TableOfContents").length === 0) {
+                              $('.bs-docs-sidebar').each(function(idx, value) {
+                                   $(value).append('<nav id="TableOfContents"><ul></ul></nav>');
+                              });
+                         }
+                         $('#TableOfContents ul').each(function() {
                               this.className = "nav";
                          });
                          var words = Math.ceil( 74  / 184);
-                         jQuery('#TableOfContents ul').prepend("<li><span>Read this post in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "&nbsp;...</span></li></l><li><a href='#post'>Intro</a></li>");
-                         jQuery('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus_thread'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;...&nbsp;and join the discussion!</a></li>");
+                         $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i>&nbsp;Read this post in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "&nbsp;...</a></li>");
+                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus_thread'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;...&nbsp;and join the discussion!</a></li>");
                     </script>
                </div>
           </div>
