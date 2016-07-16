@@ -111,6 +111,18 @@ gefunden zu haben: tdie Sky360 Business Embassy im Herzen !-) von Wien:</p>
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i>&nbsp;Read this post in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "&nbsp;...</a></li>");
                          $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus_thread'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;...&nbsp;and join the discussion!</a></li>");
                     </script>
+                    <script type="text/javascript">
+                         $('#TableOfContents a').click(function() {
+                              var href = $.attr(this, 'href');
+                              href = href.replace(/:/g, '\\:');
+                              $('html, body').animate({
+                                   scrollTop: jQuery(href).offset().top
+                              }, 500, function () {
+                                   window.location.hash = href;
+                              });
+                              return false;
+                         });
+                    </script>
                </div>
           </div>
      </section>
@@ -152,19 +164,6 @@ gefunden zu haben: tdie Sky360 Business Embassy im Herzen !-) von Wien:</p>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/snap.svg-min.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/restart_theme.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/collapser.js'></script>
-<script type="text/javascript">
-    jQuery('#TableOfContents a').click(function() {
-        var href = $.attr(this, 'href');
-        href = href.replace(/:/g, '\\:');
-        console.log(href);
-        jQuery('html, body').animate({
-            scrollTop: jQuery(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        return false;
-    });
-</script>
 </body>
 </html>
 

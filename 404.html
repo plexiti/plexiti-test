@@ -104,19 +104,6 @@
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/snap.svg-min.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/restart_theme.js'></script>
 <script type="text/javascript" src='http://plexiti.github.io/plexiti/js/collapser.js'></script>
-<script type="text/javascript">
-    jQuery('#TableOfContents a').click(function() {
-        var href = $.attr(this, 'href');
-        href = href.replace(/:/g, '\\:');
-        console.log(href);
-        jQuery('html, body').animate({
-            scrollTop: jQuery(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        return false;
-    });
-</script>
 </body>
 </html>
 
