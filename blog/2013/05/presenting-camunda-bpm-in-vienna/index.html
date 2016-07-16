@@ -143,6 +143,7 @@ GmbH</a></strong> </div></p>
                               </div>
                          </article>
                          
+                         <div id="disqus"></div>
                          <div id="disqus_thread"></div>
                          <script>
                               (function() {
@@ -157,6 +158,7 @@ GmbH</a></strong> </div></p>
                          <div class="bs-docs-sidebar hidden-print affix-top" role="complementary" data-spy="affix" data-offset-top="318" data-offset-bottom="405">
                               
                          </div>
+                         <div><a id="disqus_counter" href='#disqus_thread' style='display: none'></a></div>
                     </div>
                     <script type="text/javascript">
                          if($("#TableOfContents").length === 0) {
@@ -169,7 +171,7 @@ GmbH</a></strong> </div></p>
                          });
                          var words = Math.ceil( 447  / 184);
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i>&nbsp;Read this post in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "&nbsp;...</a></li>");
-                         $('#TableOfContents ul').append("<li class='disqus_link'><a href=''><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;...&nbsp;and join the discussion!&nbsp;(<a href='#disqus_thread'></a>)</a></li>");
+                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments' aria-hidden='true'></i>&nbsp;...&nbsp;and join the discussion!</a></li>");
                     </script>
                     <script type="text/javascript">
                          $('#TableOfContents a').click(function() {
@@ -181,6 +183,12 @@ GmbH</a></strong> </div></p>
                                    window.location.hash = href;
                               });
                               return false;
+                         });
+                    </script>
+                    <script type="text/javascript">
+                         $('#disqus_counter').change(function() {
+                              var counter = this.text();
+                              console.log(counter);
                          });
                     </script>
                </div>
