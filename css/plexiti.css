@@ -131,7 +131,7 @@ article.post p + div {
     padding-left: 0px;
 }
 
-#TableOfContents li span {
+#TableOfContents li > span {
     display: block;
     font-size: 12pt;
     min-height: 35px;
