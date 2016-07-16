@@ -173,7 +173,7 @@ weg sind!&lt;/p&gt;
     </item>
     
     <item>
-      <title>Und der Camunda BPM Community Award ergeht an… :-)</title>
+      <title>Der Camunda Community Award ergeht an ... :-)</title>
       <link>http://plexiti.github.io/plexiti/blog/2014/03/camunda-bpm-community-award/</link>
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
@@ -212,7 +212,7 @@ weg sind!&lt;/p&gt;
 
 &lt;p&gt;Urspünglich eine gemeinsam von &lt;a href=&#34;http://rafael.cordones.me&#34;&gt;Rafael Cordones&lt;/a&gt; und mir in die Welt gesetzte und von Jan Galinski und Simon Zambrovski (beide &lt;a href=&#34;http://www.holisticon.de&#34;&gt;Holisticon&lt;/a&gt;) tatkräftig unterstützte Idee, konnte ich mir nun die nötige Zeit nehmen, den experimentellen Code auf den Kern zu reduzieren und vor allem zu testen: &amp;ldquo;Never forget to test the test code!&amp;rdquo; :-) Das Ergebnis ist nun zugänglich über camundas maven repo als&lt;/p&gt;
 
-&lt;h1 id=&#34;camunda-bpm-assert-1-0-fork-me-on-github-https-github-com-camunda-camunda-bpm-assert&#34;&gt;camunda-bpm-assert 1.0 - &lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert&#34;&gt;Fork me on GitHub&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;camunda-bpm-assert-1-0&#34;&gt;camunda-bpm-assert 1.0&lt;/h1&gt;
 
 &lt;p&gt;Man benötigt lediglich einen statischen Import…&lt;/p&gt;
 
@@ -253,6 +253,8 @@ complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;qu
 
 &lt;pre&gt;&lt;code&gt;claim(task(&amp;quot;edit&amp;quot;, pi), &amp;quot;mary&amp;quot;);
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;fork-me-on-github&#34;&gt;Fork me on GitHub!&lt;/h1&gt;
 
 &lt;p&gt;Ein kompletter &lt;strong&gt;&lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert/blob/master/camunda-bpm-assert/README.md&#34;&gt;User Guide&lt;/a&gt;&lt;/strong&gt; mit allen derzeit zur Verfügung stehenden Assertions und Helper Methoden ist online abrufbar. Worauf also warten?-) &lt;strong&gt;&lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert#getting-started&#34;&gt;Get started&lt;/a&gt;&lt;/strong&gt; and… enjoy your upgraded pasta!&lt;/p&gt;
 </description>
