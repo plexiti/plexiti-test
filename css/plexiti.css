@@ -106,17 +106,17 @@ article.post p + div {
 
 .affix {
     position: fixed !important;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 0px;
 }
 
 .affix-top {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px;
 }
 
 .affix-bottom {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 0px;
 }
 
@@ -137,6 +137,7 @@ article.post p + div {
     min-height: 35px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 10px;
 }
 
 #TableOfContents a {
