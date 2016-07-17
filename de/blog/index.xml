@@ -19,9 +19,9 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,&lt;/p&gt;
 
-&lt;h1 id=&#34;quotes-and-awesome-hugoshortcode-1-icons&#34;&gt;Quotes and Awesome &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
+&lt;h1 id=&#34;links-quotes-and-awesome-hugoshortcode-1-icons&#34;&gt;Links, Quotes and Awesome &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer  &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The secret to creativity is knowing how to hide your sources. &lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
@@ -29,17 +29,20 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;external-links-and-pictures&#34;&gt;External Links and Pictures&lt;/h1&gt;
+&lt;h1 id=&#34;pictures-with-caption-and-credits&#34;&gt;Pictures with Caption and Credits&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg&#34; /&gt;
-    
-    
+&lt;figure&gt;
+    &lt;p class=&#34;credits&#34;&gt;
+    &lt;a href=&#34;http://derstandard.at&#34;&gt;
+    Foto: Martin Schimak
+    , CC BY-SA 2.0
+    &lt;/a&gt;
+    &lt;/p&gt;
+    &lt;img src=&#39;http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg&#39; title=&#34;Die Pyramiden von Gizeh&#34;&gt;
 &lt;/figure&gt;
+&lt;p class=&#34;caption&#34;&gt;Die Pyramiden von Gizeh&lt;/p&gt;
 
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;

@@ -60,10 +60,6 @@ article.post {
     font-weight: bold;
 }
 
-figcaption h4 {
-    margin: 0px;
-}
-
 .twitter-tweet, .gist {
     margin-top: 20px !important;
     margin-bottom: 20px !important;
@@ -294,6 +290,37 @@ footer blockquote cite:before {
     margin-right: 0px;
 }
 
-.post_content img {
-    margin: 14px 0px 28px 0px;
+figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.credits {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 2px;
+}
+.credits a {
+    color: inherit;
+    text-decoration: none !important;
+    font-weight: normal !important;
+}
+
+figure + .caption {
+    position: relative;
+    top: -15px;
+    color: #999999;
+    display: block;
+    margin-left: 2px;
+}
+
+figure img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }

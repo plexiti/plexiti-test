@@ -73,9 +73,9 @@
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
 
-<h1 id="quotes-and-awesome-hugoshortcode-1-icons">Quotes and Awesome <i class='fa fa-coffee' aria-hidden='true'></i> Icons</h1>
+<h1 id="links-quotes-and-awesome-hugoshortcode-1-icons">Links, Quotes and Awesome <i class='fa fa-coffee' aria-hidden='true'></i> Icons</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer  <a href="http://camunda.org/" title="Camunda BPM Platform">adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa.</p>
 
 <blockquote>
 <p>The secret to creativity is knowing how to hide your sources. <cite>Albert Einstein</cite></p>
@@ -83,17 +83,20 @@
 
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-<h1 id="external-links-and-pictures">External Links and Pictures</h1>
+<h1 id="pictures-with-caption-and-credits">Pictures with Caption and Credits</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetuer <a href="http://camunda.org/" title="Camunda BPM Platform">adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-
-<figure >
-    
-        <img src="http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg" />
-    
-    
+<figure>
+    <p class="credits">
+    <a href="http://derstandard.at">
+    Foto: Martin Schimak
+    , CC BY-SA 2.0
+    </a>
+    </p>
+    <img src='http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg' title="Die Pyramiden von Gizeh">
 </figure>
+<p class="caption">Die Pyramiden von Gizeh</p>
 
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -211,8 +214,8 @@
                          <div class="bs-docs-sidebar hidden-print affix-top" role="complementary" data-spy="affix" data-offset-top="318" data-offset-bottom="405">
                               <nav id="TableOfContents">
 <ul>
-<li><a href="#quotes-and-awesome-hugoshortcode-1-icons">Quotes and Awesome <i class='fa fa-coffee' aria-hidden='true'></i> Icons</a></li>
-<li><a href="#external-links-and-pictures">External Links and Pictures</a></li>
+<li><a href="#links-quotes-and-awesome-hugoshortcode-1-icons">Links, Quotes and Awesome <i class='fa fa-coffee' aria-hidden='true'></i> Icons</a></li>
+<li><a href="#pictures-with-caption-and-credits">Pictures with Caption and Credits</a></li>
 <li><a href="#cross-references-tweets">Cross References &amp; Tweets</a></li>
 <li><a href="#youtube-and-vimeo-videos">YouTube and Vimeo Videos</a></li>
 <li><a href="#github-gists-and-speakerdeck-slides">GitHub Gists and SpeakerDeck Slides</a></li>
@@ -232,9 +235,9 @@
                          $('#TableOfContents ul').each(function() {
                               this.className = "nav";
                          });
-                         var words = Math.ceil( 789  / 184);
+                         var words = Math.ceil( 802  / 184);
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <strong>" + words + "</strong> minute" + (words > 1 ? "s" : "") + "&nbsp;...</a></li>");
-                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... and join the discussion! <span class='disqus-comment-count' data-disqus-identifier='\/blog\/2016\/07\/a-test-blog-post-showing-off-all-gadgets\/'></span></a></li>");
+                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... and join the discussion! <span class='disqus-comment-count' data-disqus-identifier='/de\/blog\/2016\/07\/a-test-blog-post-showing-off-all-gadgets\/'></span></a></li>");
                     </script>
                     <script type="text/javascript">
                          $('#TableOfContents a').click(function() {
