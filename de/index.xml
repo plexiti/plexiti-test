@@ -448,48 +448,6 @@ GmbH&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Camunda BPM Prozessanwendungen in die OpenShift Cloud deployen</title>
-      <link>http://plexiti.github.io/plexiti/de/blog/2013/05/deploying-camunda-bpm-process-applications-on-the-openshift-cloud/</link>
-      <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://plexiti.github.io/plexiti/de/blog/2013/05/deploying-camunda-bpm-process-applications-on-the-openshift-cloud/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Die zwei Hauptanforderungen die ich habe sind: den OpenShift Deployment
-Umgebungsaspekt orthogonal zum Rest meiner Anwendungscodebase zu halten.
-Und: wann immer ein neues camunda BPM Release vom camunda BPM OpenShift
-quickstart unterstützt wird würde ich gerne in der Lage sein einfach
-upzugraden.&amp;rdquo;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Appetithäppchen aus Enterprise Integration Patterns mit Spring Integration</title>
-      <link>http://plexiti.github.io/plexiti/de/blog/2013/04/appetizers-of-enterprise-integration-patterns-with-spring-integration/</link>
-      <pubDate>Mon, 29 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://plexiti.github.io/plexiti/de/blog/2013/04/appetizers-of-enterprise-integration-patterns-with-spring-integration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Startschuß für die camunda.org Community Events</title>
-      <link>http://plexiti.github.io/plexiti/de/blog/2013/04/the-start-of-camunda-org-community-events/</link>
-      <pubDate>Wed, 24 Apr 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://plexiti.github.io/plexiti/de/blog/2013/04/the-start-of-camunda-org-community-events/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Letzte Woche hatten wir unsere ersten beiden camunda.org Community
-Kick-Off Events. Am Mittwoch waren wir bei der Deutsche WertpapierService
-Bank AG in Frankfurt gefolgt von einem Abend am Donnerstag bei der LVM
-Versicherung in Münster.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Und umso mehr freuen wir uns also schon auf &amp;ldquo;unseren&amp;rdquo; Event am 16.5. in
-Wien! And wir sind einen außergewöhnlichen Ort für diese Veranstaltung
-gefunden zu haben: tdie Sky360 Business Embassy im Herzen !-) von Wien:&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe width=&#34;425&#34; height=&#34;350&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; ng-style=&#34;style()&#34; resize marginheight=&#34;0&#34; marginwidth=&#34;0&#34; src=&#34;https://maps.google.at/maps?ie=UTF8&amp;amp;cid=876120560139857205&amp;amp;q=BENA+Business+Embassy+Sky360&amp;amp;gl=AT&amp;amp;hl=en&amp;amp;t=m&amp;amp;iwloc=A&amp;amp;ll=48.19797,16.366203&amp;amp;spn=0.006295,0.006295&amp;amp;output=embed&#34;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&#34;https://maps.google.at/maps?ie=UTF8&amp;amp;cid=876120560139857205&amp;amp;q=BENA+Business+Embassy+Sky360&amp;amp;gl=AT&amp;amp;hl=en&amp;amp;t=m&amp;amp;iwloc=A&amp;amp;ll=48.19797,16.366203&amp;amp;spn=0.006295,0.006295&amp;amp;source=embed&#34; style=&#34;color:#0000FF;text-align:left&#34;&gt;View Larger Map&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>camunda BPM Incubation Space startet mit einer Contribution von plexiti</title>
       <link>http://plexiti.github.io/plexiti/de/blog/2013/04/camunda-bpm-incubation-space-launched/</link>
       <pubDate>Wed, 24 Apr 2013 00:00:00 +0000</pubDate>
@@ -512,32 +470,91 @@ Status der vom Projekt-Lead Daniel Meyer angekündigten Contribution:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Appetithäppchen aus Enterprise Integration Patterns</title>
-      <link>http://plexiti.github.io/plexiti/de/blog/2013/04/enterprise-integration-patterns-appetizer/</link>
-      <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
+      <title>Unser Pecha Kucha in Berlin</title>
+      <link>http://plexiti.github.io/plexiti/de/blog/2012/09/our-pecha-kucha-in-berlin/</link>
+      <pubDate>Thu, 20 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://plexiti.github.io/plexiti/de/blog/2013/04/enterprise-integration-patterns-appetizer/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Am nächsten Montag, den 22. April um 19:00 wird es eine großartige
-Möglichkeit geben die Integration Patterns kennenzulernen. Rafael
-Cordones wird mit einer kurzen Einführung in die verschiedenen Arten
-von Integration beginnen und wird dann ihre Pros und Contras unter
-die Lupe nehmen.&amp;rdquo;&lt;/p&gt;
+      <guid>http://plexiti.github.io/plexiti/de/blog/2012/09/our-pecha-kucha-in-berlin/</guid>
+      <description>&lt;p&gt;Zugegeben: das war das &amp;lsquo;erste Mal&amp;rsquo; Pecha Kucha - eine neue Erfahrung:
+&lt;a href=&#34;http://de.wikipedia.org/wiki/Pecha_Kucha&#34;&gt;20 Folien zu je 20 Sekunden&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Und so hat das dann bei der &lt;a href=&#34;http://www.bpmcon.de&#34;&gt;BPMCon 2012&lt;/a&gt; in Berlin &amp;lsquo;live&amp;rsquo; ausgesehen: :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../our-pecha-kucha-in-berlin.png&#34; alt=&#34;Martin Schimak auf der BPMCon 2012&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../online.jpg&#34; alt=&#34;Sind wir online? :-)&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Und last not least unser kleiner Vortrag zu&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/plexiti/bpmn-prozessanwendungen-mit-java-ee-6-ein-beispiel-und-quickstart&#34;&gt;BPMN Prozessanwendungen mit Java EE 6&lt;/a&gt; über Slideshare:&lt;/p&gt;
+
+&lt;iframe src=&#34;http://de.slideshare.net/slideshow/embed_code/14315962&#34; width=&#34;640&#34; height=&#34;521&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; ng-style=&#34;style()&#34; resize allowfullscreen&gt; &lt;/iframe&gt; 
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://de.slideshare.net/plexiti/bpmn-prozessanwendungen-mit-java-ee-6-ein-beispiel-und-quickstart&#34;&gt;BPMN Prozessanwendungen mit Java EE 6 – ein Beispiel und Quickstart&lt;/a&gt;&lt;/strong&gt;
+from &lt;a href=&#34;http://de.slideshare.net/plexiti&#34;&gt;plexiti&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Ich war auf diesem Scala User Group Meetup im openForce Büro...</title>
-      <link>http://plexiti.github.io/plexiti/de/blog/2013/04/i-attended-this-scala-user-group-meetup/</link>
-      <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
+      <title>Der Showcase zur Stellenausschreibung ist fertig*!</title>
+      <link>http://plexiti.github.io/plexiti/de/blog/2012/09/the-job-announcement-showcase-is-done/</link>
+      <pubDate>Fri, 14 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://plexiti.github.io/plexiti/de/blog/2013/04/i-attended-this-scala-user-group-meetup/</guid>
-      <description>&lt;p&gt;&amp;ldquo;Cucumber Tests zu schreiben zwingt Dich dazu, so wie der Kunde zu denken &amp;hellip;
-und für den Entwickler, der vielleicht später zu Ihrem Projekt dazustösst,
-ist es so viel leichter sich durch Ihren Prozess zu &lt;em&gt;lesen&lt;/em&gt;.&amp;rdquo;&lt;/p&gt;
+      <guid>http://plexiti.github.io/plexiti/de/blog/2012/09/the-job-announcement-showcase-is-done/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Puuh&lt;/strong&gt;, das war ein schönes Stück Arbeit, aber es ist fürs erste geschafft:
+unsere Prozessanwendung zur im
+&lt;a href=&#34;http://www.hanser-fachbuch.de/buch/Praxishandbuch+BPMN+20/9783446429864&#34;&gt;Praxishandbuch BPMN 2.0&lt;/a&gt;
+als Beispiel ausführlichst beschriebenen
+&lt;a href=&#34;http://www.bpm-guide.de/2010/08/06/praxishandbuch-bpmn-2-auflage-ab-mitte-september/?lang_pref=de&#34;&gt;Stellenausschreibung&lt;/a&gt;
+ist fertig *!&lt;/p&gt;
 
-&lt;p&gt;Floor Drees zitiert hier eigentlich &lt;a href=&#34;http://rafael.cordones.me&#34;&gt;Rafa&lt;/a&gt; und ich
-freue mich sie zu zitieren, wie sie ihn zitiert. Und jetzt kennt sich sicher
-niemand mehr aus&amp;hellip; wir leben in komplexen &amp;ldquo;social times&amp;rdquo;! :-)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://the-job-announcement.com/&#34;&gt;&lt;img src=&#34;../the-job-announcement-showcase-is-done.png&#34; alt=&#34;The Job Announcement&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Unser Ziel ist nicht nur zum &lt;a href=&#34;http://the-job-announcement.com/&#34;&gt;Selber spielen&lt;/a&gt; einzuladen,
+sondern auch eine auf &lt;a href=&#34;http://www.camunda.com/fox&#34;&gt;camunda fox&lt;/a&gt;,
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/javaee&#34;&gt;Java EE 6&lt;/a&gt; und
+&lt;a href=&#34;http://twitter.github.com/bootstrap/&#34;&gt;Bootstrap&lt;/a&gt; basierende Prozessanwendung zu bauen,
+die einen Java Entwickler in die Lage versetzt binnen 60 Minuten mit der eigenen Anwendung
+zu starten: den Source Code kann man via &lt;a href=&#34;https://github.com/plexiti/the-job-announcement-fox&#34;&gt;GitHub&lt;/a&gt;
+herunterladen.&lt;/p&gt;
+
+&lt;p&gt;Auf jeder Seite der Anwendung findet sich ganz oben ein &amp;ldquo;Hilfe&amp;rdquo;-Button mit den wichtigsten
+Inhalten und Anleitungen zum Ausprobieren. Trotzdem: ganz oben auf der Agenda steht nun
+mehr Dokumentation - wir finden die ist ganz eindeutig noch nicht groß genug! (Ehrlich jetzt.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../cartoon.jpg&#34; alt=&#34;Soviel Dokumentation&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;[Credits to &lt;a href=&#34;http://writersua.com/articles/quickref/&#34;&gt;writersua.com&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;
+*) Ein leicht schmunzelndes &amp;ldquo;fertig&amp;rdquo; - weniger im Sinn von
+&lt;a href=&#34;http://jamesshore.com/Agile-Book/done_done.html&#34;&gt;fertigfertig&lt;/a&gt; - eher &lt;strong&gt;beschließen&lt;/strong&gt; wir,
+dass uns das bisherige Ergebnis schon ziemlich gut gefällt und es online gestellt werden
+sollte um mehr Feedback für die nächsten Schritte zu bekommen.
+&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wir sind auf dem Weg!</title>
+      <link>http://plexiti.github.io/plexiti/de/blog/2012/09/we-are-on-the-way/</link>
+      <pubDate>Fri, 14 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://plexiti.github.io/plexiti/de/blog/2012/09/we-are-on-the-way/</guid>
+      <description>&lt;p&gt;Unverhofft kommt oft! Wir erhielten ganz kurzfristig die schöne Gelegenheit
+unsere &lt;a href=&#34;#/news/2012/09/the-job-announcement-showcase-is-done&#34;&gt;Prozessanwendung&lt;/a&gt;
+zur im &lt;a href=&#34;http://www.hanser-fachbuch.de/buch/Praxishandbuch+BPMN+20/9783446429864&#34;&gt;Praxishandbuch BPMN 2.0&lt;/a&gt; beschriebenen
+&lt;a href=&#34;http://www.bpm-guide.de/2010/08/06/praxishandbuch-bpmn-2-auflage-ab-mitte-september/?lang_pref=de&#34;&gt;Stellenausschreibung&lt;/a&gt;
+auf der &lt;a href=&#34;http://www.bpmcon.de/&#34;&gt;BPMCon 2012&lt;/a&gt; in Berlin vorzustellen. Und zwar im Rahmen des
+&lt;a href=&#34;http://www.bpmcon.de/agenda/&#34;&gt;Pecha Kucha&lt;/a&gt;: &lt;a href=&#34;http://de.wikipedia.org/wiki/Pecha_Kucha&#34;&gt;20 Folien zu je 20 Sekunden&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Cool auch, weil wir nun keine Ausrede haben unsere Website einfach mal online zu stellen und &amp;ldquo;nach Berlin&amp;rdquo; dann
+weiterzubasteln. &lt;a href=&#34;http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html&#34;&gt;Release early, release often&lt;/a&gt;.
+Wir machen uns in mehrfacher Hinsicht &amp;ldquo;auf den Weg&amp;rdquo;!&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/lt2sEFs0AgE?rel=0&#34; frameborder=&#34;0&#34; allowfullscreen ng-style=&#34;style()&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;(Many Credits to &lt;a href=&#34;http://www.keinermagfaustmann.com/&#34;&gt;Keiner mag Faustmann&lt;/a&gt; for publicly releasing this great song and video via YouTube)&lt;/p&gt;
 </description>
     </item>
     
