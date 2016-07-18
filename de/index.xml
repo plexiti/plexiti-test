@@ -10,7 +10,7 @@
     <atom:link href="https://plexiti.github.io/plexiti-test/de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>A Test Blog Post Showing Off All Gadgets</title>
+      <title>Ein Test Blog Post mit allen Medientypen</title>
       <link>https://plexiti.github.io/plexiti-test/de/blog/2016/07/a-test-blog-post-showing-off-all-gadgets/</link>
       <pubDate>Wed, 13 Jul 2016 21:29:07 +0200</pubDate>
       
@@ -19,17 +19,17 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,&lt;/p&gt;
 
-&lt;h1 id=&#34;links-quotes-and-awesome-hugoshortcode-1-icons&#34;&gt;Links, Quotes and Awesome &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
+&lt;h1 id=&#34;links-zitate-und-erstaunliche-hugoshortcode-1-icons&#34;&gt;Links, Zitate und erstaunliche &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer  &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;The secret to creativity is knowing how to hide your sources. &lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;Das Geheimnis der Kreativität ist es, zu wissen wie man seine Quellen versteckt. &lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;pictures-with-caption-and-credits&#34;&gt;Pictures with Caption and Credits&lt;/h1&gt;
+&lt;h1 id=&#34;bilder-mit-untertitel-und-credits&#34;&gt;Bilder mit Untertitel und Credits&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -47,7 +47,21 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;cross-references-tweets&#34;&gt;Cross References &amp;amp; Tweets&lt;/h1&gt;
+&lt;figure&gt;
+    
+    
+    
+    
+    
+    
+    &lt;img src=&#39;https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg&#39; &gt;
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;querverweise-tweets&#34;&gt;Querverweise &amp;amp; Tweets&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer &lt;a href=&#34;https://plexiti.github.io/plexiti-test/de/blog/2015/12/camunda-bpm-release-roadshow/&#34; title=&#34;Camunda BPM 7.4 Release Roadshow&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -56,7 +70,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;youtube-and-vimeo-videos&#34;&gt;YouTube and Vimeo Videos&lt;/h1&gt;
+&lt;h1 id=&#34;youtube-und-vimeo-videos&#34;&gt;YouTube und Vimeo Videos&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -76,7 +90,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;github-gists-and-speakerdeck-slides&#34;&gt;GitHub Gists and SpeakerDeck Slides&lt;/h1&gt;
+&lt;h1 id=&#34;github-gists-und-speakerdeck-folien&#34;&gt;GitHub Gists und SpeakerDeck Folien&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -88,7 +102,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;bpmn-process-diagrams-with-references&#34;&gt;BPMN Process Diagrams with References&lt;/h1&gt;
+&lt;h1 id=&#34;bpmn-prozessdiagramme-mit-verweisen&#34;&gt;BPMN Prozessdiagramme mit Verweisen&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -103,7 +117,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;dmn-decision-tables-with-references&#34;&gt;DMN Decision Tables with References&lt;/h1&gt;
+&lt;h1 id=&#34;dmn-entscheidungstabellen-mit-verweisen&#34;&gt;DMN Entscheidungstabellen mit Verweisen&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -118,7 +132,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;cmmn-case-diagrams-with-references&#34;&gt;CMMN Case Diagrams with References&lt;/h1&gt;
+&lt;h1 id=&#34;cmmn-falldiagramme-mit-verweisen&#34;&gt;CMMN Falldiagramme mit Verweisen&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -215,7 +229,7 @@ weg sind!&lt;/p&gt;
     </item>
     
     <item>
-      <title>Camunda BPM Assert 1.0 released!</title>
+      <title>Camunda BPM Assert 1.0 verfügbar!</title>
       <link>https://plexiti.github.io/plexiti-test/de/blog/2014/03/camunda-bpm-assert-released/</link>
       <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
       

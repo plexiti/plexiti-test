@@ -43,17 +43,19 @@
       <div class="navbar-header">
         <a class="navbar-brand" href='https://plexiti.github.io/plexiti-test/de/'>
           <img src='https://plexiti.github.io/plexiti-test/de/img/logo.png' style='width: 250px; height: 96px' title="plexiti">
-          <span class="logo_subtitle" style="font-size: 13pt;">the business programming blog</span>
+          <span class="logo_subtitle" style="font-size: 13pt;">der business programming blog</span>
         </a>
-        
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav pull-right navbar-nav">
-          <li><a href='https://plexiti.github.io/plexiti-test/de/blog/'>Blog</a></li>
-          <li><a href='https://plexiti.github.io/plexiti-test/de/about/'>About</a></li>
+          
+          
+            <li><a href='https://plexiti.github.io/plexiti-test/de/blog/'>Blog</a></li>
+          
+            <li><a href='https://plexiti.github.io/plexiti-test/de/about/'>Impressum</a></li>
+          
         </ul>
       </div>
-      
     </div>
   </div>
 </header>
@@ -130,10 +132,10 @@
                          $('#TableOfContents ul').each(function() {
                               this.className = "nav";
                          });
-                         var words = Math.ceil( 403  / 184);
-                         $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <strong>" + words + " minute" + (words > 1 ? "s" : "") + "</strong>&nbsp;...</a></li>");
+                         var numbers = Math.ceil( 403  / 184);
+                         $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Lies diesen Post in ca. <strong>" + numbers + " Minute" + (numbers > 1 ? "n" : "") + "</strong>&nbsp;...</a></li>");
                          
-                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... and join the discussion! <span class='disqus-comment-count' data-disqus-identifier='/de\/blog\/2013\/10\/thoughts-about-the-no-bullshit-bpmcon-2013\/'></span></a></li>");
+                         $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... und diskutiere mit! <span class='disqus-comment-count' data-disqus-identifier='/de\/blog\/2013\/10\/thoughts-about-the-no-bullshit-bpmcon-2013\/'></span></a></li>");
                          
                     </script>
                     <script type="text/javascript">
@@ -158,7 +160,7 @@
         <div class="twitter_feed_icon col-sm-1 col-md-1"><a href='https://twitter.com/MartinSchimak/'><i class="fa fa-twitter"></i></a></div>
         <div class="col-sm-11 col-md-11">
           <blockquote>
-            <p>Business programming is about apps and api&rsquo;s, requirements and models, data structures and algorithms. It&rsquo;s about understanding domain experts, reducing everything to the essentials and implementing it as executable software. But at it&rsquo;s core, it&rsquo;s about human motivations and goals, the purpose and <strong>„business“</strong> of <strong>„programming“</strong>.</p>
+            <p>„Business Programming“ handelt von Apps und Api&rsquo;s, Anforderungen und Modellen, Datenstrukturen und Algorithmen. Es geht darum Fachexperten zu verstehen, alles auf das Wesentliche zu reduzieren und als ausführbare Software zu implementieren. Hinter all dem stehen aber immer menschliche Motivationen und Ziele. Umso besser wir diese verstehen, umso erfolgreicher sind wir im <strong>„Business“</strong> des <strong>„Programming“</strong>.</p>
             <cite><a href="https://twitter.com/MartinSchimak/">@MartinSchimak</a></cite>
           </blockquote>
         </div>
@@ -168,8 +170,8 @@
   <section class="copyright">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-6"> Copyright &copy; <script>document.write(moment().format('YYYY'))</script> <a href='https://plexiti.github.io/plexiti-test/de/about'>plexiti GmbH</a> - All rights reserved.</div>
-            <div class="text-right col-sm-6 col-md-6"> Designed by <a href="http://www.leonart.gr">LeonArt</a> </div>
+            <div class="col-sm-6 col-md-6"></div>
+            <div class="text-right col-sm-6 col-md-6"> Copyright &copy; <script>document.write(moment().format('YYYY'))</script> <a href='https://plexiti.github.io/plexiti-test/de/about'>plexiti GmbH</a> - All rights reserved.</div>
         </div>
     </div>
 </section>

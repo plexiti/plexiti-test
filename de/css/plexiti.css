@@ -287,7 +287,7 @@ footer blockquote cite:before {
 }
 
 figure {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -315,10 +315,18 @@ figure + .caption {
 }
 
 figure img {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+figure.list img {
+    margin-top: 0px;
+}
+
+figure p + img {
+    margin-top: 0px;
 }
 
 .disqus-comment-count b:before {
