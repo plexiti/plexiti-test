@@ -6,8 +6,152 @@
     <description>Recent content on plexiti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 16 Dec 2015 15:51:20 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jul 2016 21:29:07 +0200</lastBuildDate>
     <atom:link href="https://plexiti.github.io/plexiti-test/de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Test Blog Post Showing Off All Gadgets</title>
+      <link>https://plexiti.github.io/plexiti-test/de/blog/2016/07/a-test-blog-post-showing-off-all-gadgets/</link>
+      <pubDate>Wed, 13 Jul 2016 21:29:07 +0200</pubDate>
+      
+      <guid>https://plexiti.github.io/plexiti-test/de/blog/2016/07/a-test-blog-post-showing-off-all-gadgets/</guid>
+      <description>
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,&lt;/p&gt;
+
+&lt;h1 id=&#34;links-quotes-and-awesome-hugoshortcode-1-icons&#34;&gt;Links, Quotes and Awesome &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer  &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The secret to creativity is knowing how to hide your sources. &lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;pictures-with-caption-and-credits&#34;&gt;Pictures with Caption and Credits&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;p class=&#34;credits&#34;&gt;
+    &lt;a href=&#34;http://derstandard.at&#34;&gt;
+    Foto: Martin Schimak
+    , CC BY-SA 2.0
+    &lt;/a&gt;
+    &lt;/p&gt;
+    &lt;img src=&#39;http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg&#39; title=&#34;Die Pyramiden von Gizeh&#34;&gt;
+&lt;/figure&gt;
+&lt;p class=&#34;caption&#34;&gt;Die Pyramiden von Gizeh&lt;/p&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;cross-references-tweets&#34;&gt;Cross References &amp;amp; Tweets&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer &lt;a href=&#34;https://plexiti.github.io/plexiti-test/de/blog/2015/12/camunda-bpm-release-roadshow/&#34; title=&#34;Camunda BPM 7.4 Release Roadshow&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hugo 0.15 will have 30%+ faster render times thanks to this commit &lt;a href=&#34;https://t.co/FfzhM8bNhT&#34;&gt;https://t.co/FfzhM8bNhT&lt;/a&gt;  &lt;a href=&#34;https://twitter.com/hashtag/gohugo?src=hash&#34;&gt;#gohugo&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&#34;&gt;#golang&lt;/a&gt; &lt;a href=&#34;https://t.co/ITbMNU2BUf&#34;&gt;https://t.co/ITbMNU2BUf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steve Francia (@spf13) &lt;a href=&#34;https://twitter.com/spf13/status/666616452582129664&#34;&gt;November 17, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;youtube-and-vimeo-videos&#34;&gt;YouTube and Vimeo Videos&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Av0JZvrTgxM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/146022717&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;github-gists-and-speakerdeck-slides&#34;&gt;GitHub Gists and SpeakerDeck Slides&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;9d632ed7641747ed8450f2b39346daf5&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;bpmn-process-diagrams-with-references&#34;&gt;BPMN Process Diagrams with References&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;div class=&#34;bpmn&#34; bpmn=&#34;../src/insurance-recourse.bpmn&#34; nr=&#34;intermediate_event_invoice_paid,task-book-payment&#34;&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Once the invoice is paid &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; you can (and should!) book the payment.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;dmn-decision-tables-with-references&#34;&gt;DMN Decision Tables with References&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;dmn&#34; dmn=&#34;../src/customer-discount.dmn&#34; nr=&#34;utilityColumn:long-time-gold,discount:short-time-bronze&#34;&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Obviously long time gold customers receive the highest discount&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; so you don&amp;rsquo;t want to be stuck here forever.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;h1 id=&#34;cmmn-case-diagrams-with-references&#34;&gt;CMMN Case Diagrams with References&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;cmmn&#34; cmmn=&#34;../src/incident-management.cmmn&#34; nr=&#34;investigate-problem-support,investigate-problem-2nd-level-support,investigate-problem-developer&#34;   &gt;
+&lt;/div&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; When investigating a customer problem, the support may decide to &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; involve the second level support &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;i class=&#34;conum&#34; data-value=&#34;3&#34;&gt;&lt;/i&gt; &amp;hellip; or to directly involve the developer.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About the business programming blog</title>
+      <link>https://plexiti.github.io/plexiti-test/de/about/</link>
+      <pubDate>Wed, 13 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://plexiti.github.io/plexiti-test/de/about/</guid>
+      <description>&lt;p class=&#34;columns_2&#34;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Camunda BPM 7.4 Roadshow!</title>
