@@ -179,14 +179,14 @@ article.post p + div {
     border-radius: 3px
 }
 
-.bjs-powered-by, .cjs-powered-by {
-    bottom: -4px !important;
+.bjs-powered-by {
+    bottom: -18px !important;
     right: -1px !important;
     height: 65px !important;
 }
 
 .cjs-powered-by {
-    bottom: 1px !important;
+    bottom: -13px !important;
     right: 4px !important;
     height: 65px !important;
 }
