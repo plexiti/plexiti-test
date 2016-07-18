@@ -51,10 +51,6 @@ article.post {
     margin-bottom: 45px;
 }
 
-.disqus_link {
-    font-weight: bold;
-}
-
 #post article.post a {
     text-decoration: underline;
     font-weight: bold;
@@ -234,7 +230,7 @@ blockquote p {
 
 footer blockquote p {
     font-size: 1.3em !important;
-    max-width: 540px;
+    max-width: 625px;
     color: #afafaf;
 }
 
@@ -323,4 +319,12 @@ figure img {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.disqus-comment-count b:before {
+    content: "(";
+}
+
+.disqus-comment-count b:after {
+    content: " Kommentare)";
 }
