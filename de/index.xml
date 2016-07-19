@@ -94,8 +94,13 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;quot;, true, &amp;quot;editor&amp;quot;, &amp;quot;mary&amp;quot;));
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code data-language=&#39;java&#39;&gt;complete(task(&amp;#34;edit&amp;#34;), withVariables(&amp;#34;finished&amp;#34;, true, &amp;#34;editor&amp;#34;, &amp;#34;mary&amp;#34;));&lt;/code&gt;&lt;/pre&gt;
+&lt;script src=&#39;https://plexiti.github.io/plexiti-test/de/js/rainbow/rainbow-custom.min.js&#39;&gt;&lt;/script&gt;
+
+
+&lt;pre&gt;&lt;code data-language=&#39;html&#39;&gt;&amp;lt;span class=&amp;#34;abc&amp;#34;&amp;gt;This is text&amp;lt;/span&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;script src=&#39;https://plexiti.github.io/plexiti-test/de/js/rainbow/rainbow-custom.min.js&#39;&gt;&lt;/script&gt;
+
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -126,7 +131,7 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;div class=&#39;dmn&#39; dmn=&#39;../src/customer-discount.dmn&#39; nr=&#39;utilityColumn:long-time-gold,discount:short-time-bronze&#39;&gt;
+&lt;div class=&#39;dmn&#39; dmn=&#39;../src/customer-discount.dmn&#39; nr=&#39;utilityColumn:long-time-gold,discount:short-time-bronze&#39; annotations=&#39;false&#39;&gt;
 &lt;/div&gt;
 
 &lt;p&gt;

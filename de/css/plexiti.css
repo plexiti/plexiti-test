@@ -392,3 +392,33 @@ figure p + img {
 .read-the-discussion.en i.pl::after {
     content: "minutes";
 }
+
+/* Fixes layouting problem caused by DMN table overlay rendering */
+.mappings .hit, .values .hit {
+  display: none;
+}
+
+/* Hide DMN annotation column in case it's requested */
+.dmn[annotations=false] .annotation {
+  display: none;
+}
+
+/* Formatr syntax highlighted sections a bit */
+pre[data-trimmed] {
+  background-color: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+pre .close {
+  float: none;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-shadow: inherit;
+  opacity: inherit;
+}
+pre .close:hover, pre .close:focus {
+  cursor: auto;
+  opacity: inherit;
+}

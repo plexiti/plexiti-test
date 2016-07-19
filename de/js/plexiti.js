@@ -103,8 +103,8 @@ function renderDmn(index, element) {
     dmnDiv.append("<i class='fa fa-thumbs-" + thumbs + "'>")
   }
   // render the table
-  var hideDetails = element.attr("hideDetails") !== "false";
-  var viewer = new window.DmnJS({container: "#" + dmnId, hideDetails: hideDetails});
+  var details = element.attr("details") !== "true";
+  var viewer = new window.DmnJS({container: "#" + dmnId, hideDetails: details});
   $.get(element.attr("dmn"), function (dmnDiagram) {
     viewer.importXML(dmnDiagram, function (err) {
       if (!err) {

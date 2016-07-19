@@ -33,6 +33,7 @@
 
   <link href='https://plexiti.github.io/plexiti-test/de/css/plexiti.css' rel='stylesheet' type='text/css'>
   <link href='https://plexiti.github.io/plexiti-test/de/js/dmn-js/css/dmn-js.css' rel='stylesheet' type='text/css'>
+  <link href='https://plexiti.github.io/plexiti-test/de/js/rainbow/rainbow-github.css' rel="stylesheet" type="text/css">
 
 </head>
 <body data-spy='scroll' data-target='#TableOfContents' data-offset='50'>
@@ -152,8 +153,13 @@
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-<pre><code>complete(task(&quot;edit&quot;), withVariables(&quot;finished&quot;, true, &quot;editor&quot;, &quot;mary&quot;));
-</code></pre>
+<pre><code data-language='java'>complete(task(&#34;edit&#34;), withVariables(&#34;finished&#34;, true, &#34;editor&#34;, &#34;mary&#34;));</code></pre>
+<script src='https://plexiti.github.io/plexiti-test/de/js/rainbow/rainbow-custom.min.js'></script>
+
+
+<pre><code data-language='html'>&lt;span class=&#34;abc&#34;&gt;This is text&lt;/span&gt;</code></pre>
+<script src='https://plexiti.github.io/plexiti-test/de/js/rainbow/rainbow-custom.min.js'></script>
+
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
@@ -184,7 +190,7 @@
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-<div class='dmn' dmn='../src/customer-discount.dmn' nr='utilityColumn:long-time-gold,discount:short-time-bronze'>
+<div class='dmn' dmn='../src/customer-discount.dmn' nr='utilityColumn:long-time-gold,discount:short-time-bronze' annotations='false'>
 </div>
 
 <p>
@@ -245,7 +251,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 862  /  184 );
+                         var numbers = Math.ceil( 866  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Lies\x27 diesen Beitrag in ca. <span class='read-the-discussion de'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                     </script>
