@@ -19,9 +19,9 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,&lt;/p&gt;
 
-&lt;h1 id=&#34;links-zitate-und-erstaunliche-hugoshortcode-1-icons&#34;&gt;Links, Zitate und erstaunliche &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; Icons&lt;/h1&gt;
+&lt;h1 id=&#34;links-zitate-und-erstaunliche-icons&#34;&gt;Links, Zitate und erstaunliche Icons&lt;/h1&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer  &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit &lt;i class=&#39;fa fa-coffee&#39; aria-hidden=&#39;true&#39;&gt;&lt;/i&gt; amet, consectetuer  &lt;a href=&#34;http://camunda.org/&#34; title=&#34;Camunda BPM Platform&#34;&gt;adipiscing elit&lt;/a&gt;. Aenean commodo ligula eget dolor. Aenean massa.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Das Geheimnis der Kreativität ist es, zu wissen wie man seine Quellen versteckt. &lt;cite&gt;Albert Einstein&lt;/cite&gt;&lt;/p&gt;
@@ -29,20 +29,20 @@
 
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;bilder-mit-untertitel-und-credits&#34;&gt;Bilder mit Untertitel und Credits&lt;/h1&gt;
+&lt;h1 id=&#34;bilder-mit-oder-ohne-untertitel-und-credits&#34;&gt;Bilder mit oder ohne Untertitel und Credits&lt;/h1&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;p class=&#34;credits&#34;&gt;
-    &lt;a href=&#34;http://derstandard.at&#34;&gt;
+    &lt;p class=&#39;credits&#39;&gt;
+    &lt;a href=&#39;http://derstandard.at&#39;&gt;
     Foto: Martin Schimak
     , CC BY-SA 2.0
     &lt;/a&gt;
     &lt;/p&gt;
-    &lt;img src=&#39;http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg&#39; title=&#34;Die Pyramiden von Gizeh&#34;&gt;
+    &lt;img src=&#39;http://wowslider.com/sliders/demo-25/data1/images/the_great_pyramid_of_giza.jpg&#39; title=&#39;Die Pyramiden von Gizeh&#39;&gt;
 &lt;/figure&gt;
-&lt;p class=&#34;caption&#34;&gt;Die Pyramiden von Gizeh&lt;/p&gt;
+&lt;p class=&#39;caption&#39;&gt;Die Pyramiden von Gizeh&lt;/p&gt;
 
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
@@ -90,7 +90,12 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;h1 id=&#34;github-gists-und-speakerdeck-folien&#34;&gt;GitHub Gists und SpeakerDeck Folien&lt;/h1&gt;
+&lt;h1 id=&#34;snippets-github-gists-und-speakerdeck-folien&#34;&gt;Snippets, GitHub Gists und SpeakerDeck Folien&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;quot;, true, &amp;quot;editor&amp;quot;, &amp;quot;mary&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -106,14 +111,14 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;div class=&#34;bpmn&#34; bpmn=&#34;../src/insurance-recourse.bpmn&#34; nr=&#34;intermediate_event_invoice_paid,task-book-payment&#34;&gt;
+&lt;div class=&#39;bpmn&#39; bpmn=&#39;../src/insurance-recourse.bpmn&#39; nr=&#39;intermediate_event_invoice_paid,task-book-payment&#39;&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Once the invoice is paid &amp;hellip;&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;1&#39;&gt;&lt;/i&gt; Once the invoice is paid &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; you can (and should!) book the payment.&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;2&#39;&gt;&lt;/i&gt; &amp;hellip; you can (and should!) book the payment.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -121,14 +126,14 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;dmn&#34; dmn=&#34;../src/customer-discount.dmn&#34; nr=&#34;utilityColumn:long-time-gold,discount:short-time-bronze&#34;&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#39;dmn&#39; dmn=&#39;../src/customer-discount.dmn&#39; nr=&#39;utilityColumn:long-time-gold,discount:short-time-bronze&#39;&gt;
+&lt;/div&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; Obviously long time gold customers receive the highest discount&amp;hellip;&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;1&#39;&gt;&lt;/i&gt; Obviously long time gold customers receive the highest discount&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; so you don&amp;rsquo;t want to be stuck here forever.&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;2&#39;&gt;&lt;/i&gt; &amp;hellip; so you don&amp;rsquo;t want to be stuck here forever.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
@@ -136,19 +141,19 @@
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;cmmn&#34; cmmn=&#34;../src/incident-management.cmmn&#34; nr=&#34;investigate-problem-support,investigate-problem-2nd-level-support,investigate-problem-developer&#34;   &gt;
+&lt;div class=&#39;cmmn&#39; cmmn=&#39;../src/incident-management.cmmn&#39; nr=&#39;investigate-problem-support,investigate-problem-2nd-level-support,investigate-problem-developer&#39;   &gt;
 &lt;/div&gt;
 
-&lt;/p&gt;
+
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;1&#34;&gt;&lt;/i&gt; When investigating a customer problem, the support may decide to &amp;hellip;&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;1&#39;&gt;&lt;/i&gt; When investigating a customer problem, the support may decide to &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;2&#34;&gt;&lt;/i&gt; &amp;hellip; involve the second level support &amp;hellip;&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;2&#39;&gt;&lt;/i&gt; &amp;hellip; involve the second level support &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;
-&lt;i class=&#34;conum&#34; data-value=&#34;3&#34;&gt;&lt;/i&gt; &amp;hellip; or to directly involve the developer.&lt;/p&gt;
+&lt;i class=&#39;conum&#39; data-value=&#39;3&#39;&gt;&lt;/i&gt; &amp;hellip; or to directly involve the developer.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
 </description>
@@ -177,7 +182,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 machen - als Abschluß einer &lt;a href=&#34;http://www.bpm-guide.de/2015/12/08/camunda-bpm-7-4-roadshow/&#34; title=&#34;Camunda BPM 7.4 Roadshow&#34;&gt;Veranstaltungsserie&lt;/a&gt; in Berlin, Hamburg,
 Düsseldorf, Frankfurt, München, Zürich und eben Wien.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.bpm-guide.de/2015/12/08/camunda-bpm-7-4-roadshow/&#34; title=&#34;Camunda BPM 7.4 Roadshow&#34;&gt;&lt;img src=&#34;../camunda-bpm-release-roadshow.png&#34; alt=&#34;Camunda BPM Release Roadshow&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.bpm-guide.de/2015/12/08/camunda-bpm-7-4-roadshow/&#34; title=&#34;Camunda BPM 7.4 Roadshow&#34;&gt;&lt;img src=&#34;../img/camunda-bpm-release-roadshow.png&#34; alt=&#34;Camunda BPM Release Roadshow&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;Camunda&amp;rdquo; ist eine Open-Source-Software zur Automatisierung von
 Geschäftsabläufen und -entscheidungen. Was das heißt? Wenn ihr z.B. auf
@@ -210,13 +215,13 @@ weg sind!&lt;/p&gt;
       <guid>https://plexiti.github.io/plexiti-test/de/blog/2014/03/camunda-bpm-community-award/</guid>
       <description>&lt;p&gt;In die schiere Unzahl der an mich bereits ergangenen Auszeichnungen und Ehrungen reiht sich nun ein ganz besonderer Neuzugang ein: im Rahmen der Geburtstagsfeier für &lt;a href=&#34;http://camunda.org&#34;&gt;camunda.org&lt;/a&gt; erhielt ich - völlig verblüfft und unvorbereitet - den &lt;strong&gt;camunda BPM community award 2014&lt;/strong&gt;! Hier zu sehen in meiner persönlichen Ehrengalerie ganz rechts. :-)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../camunda-bpm-community-award.png&#34; alt=&#34;camunda BPM community award&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/camunda-bpm-community-award.png&#34; alt=&#34;camunda BPM community award&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Unmittelbarer Anlaß dafür war die Veröffentlichung einer stabilen Version 1.0 meiner kleinen Community Extension &lt;strong&gt;&lt;a href=&#34;https://github.com/camunda/camunda-bpm-assert&#34;&gt;camunda-bpm-assert&lt;/a&gt;&lt;/strong&gt;, über die camunda &lt;strong&gt;&lt;a href=&#34;http://blog.camunda.org/2014/03/camunda-bpm-assert-10-released-as.html&#34;&gt;hier&lt;/a&gt;&lt;/strong&gt; und ich selbst &lt;strong&gt;&lt;a href=&#34;http://plexiti.com/planet/2014/03/camunda-bpm-assert-released&#34;&gt;da&lt;/a&gt;&lt;/strong&gt; schon berichtet hatten.&lt;/p&gt;
 
 &lt;p&gt;Bei der Feier des ersten Geburtstags von camunda.org am Dienstag in Berlin gab es von &lt;a href=&#34;https://github.com/meyerdan&#34;&gt;Daniel Meyer&lt;/a&gt; und seinem Team eine ganze Reihe an spannenden News rund um das unmittelbar bevorstehende GA Release &lt;strong&gt;7.1.0-Final&lt;/strong&gt; zu hören. &lt;a href=&#34;https://github.com/Nikku&#34;&gt;Nico Rehwaldt&lt;/a&gt; berichtete über das gemeinsam mit &lt;a href=&#34;http://www.zalando.com&#34;&gt;Zalando&lt;/a&gt; gestartete, völlig neue und ambitionierte Projekt &lt;a href=&#34;http://bpmn.io/blog/posts/2014-announcing-bpmn-io.html&#34;&gt;bpmn.io&lt;/a&gt;. Und Jakob Freund, Geschäftsführer der &lt;a href=&#34;http://camunda.com&#34;&gt;camunda services GmbH&lt;/a&gt;, erklärte dem Publikum wie er mit camunda nicht nur im deutschsprachigen Raum, sondern auch weit darüber hinaus reüssieren möchte. Der Schritt an die US Westküste steht für das 2008 gegründete Unternehmen nun ganz unmittelbar und konkret bevor.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../crossing-the-chasm.png&#34; alt=&#34;Jakob Freund is crossing the chasm&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/crossing-the-chasm.png&#34; alt=&#34;Jakob Freund is crossing the chasm&#34; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Jakob Freund is &lt;a href=&#34;http://www.amazon.com/Crossing-Chasm-Geoffrey-Moore/dp/0060517123/&#34;&gt;crossing the chasm&lt;/a&gt;.&lt;/p&gt;
@@ -238,7 +243,7 @@ weg sind!&lt;/p&gt;
 
 &lt;p&gt;Die kleine Community Extension &amp;ldquo;camunda-bpm-assert&amp;rdquo; möchte es ein grosses Stück einfacher machen Tests für BPMN Prozessdefinitionen zu schreiben und diese gegen &lt;a href=&#34;http://camunda.org&#34;&gt;camunda BPM&lt;/a&gt; auszuführen. Dazu wird - basierend auf Joel Costigliola&amp;rsquo;s &lt;a href=&#34;http://joel-costigliola.github.io/assertj/&#34;&gt;AssertJ&lt;/a&gt; - ein Set an Process Engine Assertions zur Verfügung gestellt. Diese können sowohl mit JUnit, aber auch in völlig anderen Testumgebungen eingesetzt werden. Außerdem unterstützt eine Reihe an kleinen Helper-Methoden bei der Navigation durch den zu testenden Prozesspfad. &lt;strong&gt;Das Motto: besser lesbarer Code - weniger Spaghetti Tests!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../camunda-bpm-assert-released.png&#34; alt=&#34;Less Spaghetti Tests&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/camunda-bpm-assert-released.png&#34; alt=&#34;Less Spaghetti Tests&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Urspünglich eine gemeinsam von &lt;a href=&#34;http://rafael.cordones.me&#34;&gt;Rafael Cordones&lt;/a&gt; und mir in die Welt gesetzte und von Jan Galinski und Simon Zambrovski (beide &lt;a href=&#34;http://www.holisticon.de&#34;&gt;Holisticon&lt;/a&gt;) tatkräftig unterstützte Idee, konnte ich mir nun die nötige Zeit nehmen, den experimentellen Code auf den Kern zu reduzieren und vor allem zu testen: &amp;ldquo;Never forget to test the test code!&amp;rdquo; :-) Das Ergebnis ist nun zugänglich über camundas maven repo als&lt;/p&gt;
 
@@ -257,7 +262,7 @@ weg sind!&lt;/p&gt;
 );
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;../process-instance-under-test.png&#34; alt=&#34;Zu testende Prozess Instanz&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/process-instance-under-test.png&#34; alt=&#34;Zu testende Prozess Instanz&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Möchte man zB sicherstellen, dass diese hier gezeigte Prozessinstanz&lt;/p&gt;
 
@@ -270,7 +275,7 @@ weg sind!&lt;/p&gt;
 &lt;p&gt;so schreibt man&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;assertThat(pi).isStarted()
-    .task(&amp;quot;edit&amp;quot;).hasCandidateGroup(&amp;quot;hr-staff&amp;quot;).isNotAssigned();
+  .task(&amp;quot;edit&amp;quot;).hasCandidateGroup(&amp;quot;hr-staff&amp;quot;).isNotAssigned();
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Möchte man diesen Task nun zuweisen und abschliessen, so kann man dafür einige der Helper Methoden nutzen:&lt;/p&gt;
@@ -300,15 +305,15 @@ complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;qu
 
 &lt;p&gt;Hier meine Slides, mit denen ich nur ganz kurz das Incubation Project &lt;a href=&#34;https://github.com/camunda/camunda-bpm-testing&#34;&gt;camunda-bpm-testing&lt;/a&gt; vorstellte. Ursprünglich aus einer kleinen Contribution von &lt;a href=&#34;http://rafael.cordones.me&#34;&gt;Rafael Cordones&lt;/a&gt; und mir hervorgegangen, macht es mich froh und auch ein bisschen stolz, dass das Baby langsam aber sicher wächst:&lt;/p&gt;
 
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;354021b01c9a01317bec126906eef5c9&#34; data-ratio=&#34;1.28643216080402&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;354021b01c9a01317bec126906eef5c9&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
 
 &lt;p&gt;Wir bauen neben &lt;a href=&#34;http://junit.org&#34;&gt;JUnit&lt;/a&gt; auf mittlerweile fünf bewährten Testing Libraries auf (&lt;a href=&#34;https://github.com/alexruiz/fest-assert-2.x/wiki&#34;&gt;FEST Assertions&lt;/a&gt;, &lt;a href=&#34;http://code.google.com/p/mockito/&#34;&gt;Mockito&lt;/a&gt;, &lt;a href=&#34;http://jbehave.org&#34;&gt;JBehave&lt;/a&gt;, &lt;a href=&#34;http://needle.spree.de/overview&#34;&gt;Needle&lt;/a&gt;, &lt;a href=&#34;http://arquillian.org&#34;&gt;Arquillian&lt;/a&gt;) und fügen einerseits den Glue Code hinzu der benötigt wird, um diese Werkzeuge im Kontext von Prozessapplikationen gut einsetzen zu können, andererseits geht es aber gerade im Bereich Assertions auch um etwas mehr Coding. Helping hands very welcome!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../tweet.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/tweet.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Und Prag. Ganz arg: die Stadt hat mich auf eine unerwartete Weise irgendwo ganz tief drinnen &amp;ldquo;berührt&amp;rdquo;. Vielleicht erinnert mich so manches dort an das geliebte Wien meiner Kindheit… ganz sicher z.B. das allgegenwärtige Kopfsteinpflaster… vor allem aber die Menschen, warum, das kann ich aber nicht so genau greifen. Ich fühle mich in Prag &amp;ldquo;wie zuhause&amp;rdquo; und werde ganz sicher noch öfter dorthin zurückkehren…!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../camunda-community-day.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/camunda-community-day.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;(Credits to &lt;a href=&#34;http://commons.wikimedia.org/w/index.php?title=User:Metbrot&amp;amp;action=edit&amp;amp;redlink=1&#34;&gt;metbrot&lt;/a&gt; according to &lt;a href=&#34;http://creativecommons.org/licenses/by-sa/3.0/deed.en&#34;&gt;CC-BY-SA 3.0&lt;/a&gt;)&lt;/p&gt;
 </description>
@@ -322,7 +327,7 @@ complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;qu
       <guid>https://plexiti.github.io/plexiti-test/de/blog/2013/10/thoughts-about-the-no-bullshit-bpmcon-2013/</guid>
       <description>&lt;p&gt;Am 20.9. luden die unkonventionellen Berliner BPM(N)-Profis von camunda wieder zu ihrer Hauskonferenz samt Grillparty, und konnten mit diesem Package auch dieses Jahr wieder gut 150 Teilnehmer in die alte Generatorenhalle des Kreuzberger Umspannwerks locken. Genau die richtige Atmosphäre also um bei guter Stimmung über die kontinuierliche Neuerfindung des Zusammenspiels von Mensch und Maschine nachzudenken.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../chaplin.png&#34; alt=&#34;Charlie Chaplin&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/chaplin.png&#34; alt=&#34;Charlie Chaplin&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Interessant war zu beobachten, welche Themen da nur wenige Monate nach dem Launch des Open Source Projekts &lt;a href=&#34;http://camunda.org&#34;&gt;camunda.org&lt;/a&gt; auf die Agenda gesetzt und in den Mittelpunkt der Aufmerksamkeit gerückt wurden. Schon das Motto &amp;ldquo;Starting Up BPM!&amp;rdquo;, vor allem aber die Liste der Beiträge legte einen deutlichen Schwerpunkt auf Internet Companies wie &lt;a href=&#34;http://www.zalando.de&#34;&gt;zalando&lt;/a&gt;, &lt;a href=&#34;http://www.flightright.de&#34;&gt;flightright&lt;/a&gt; und &lt;a href=&#34;http://www.my-toys.de&#34;&gt;mytoys&lt;/a&gt;. Allen gemeinsam: der Einsatz von Open Source BPMN Process Engines.&lt;/p&gt;
 
@@ -332,17 +337,17 @@ complete(task(&amp;quot;edit&amp;quot;), withVariables(&amp;quot;finished&amp;qu
 &lt;p&gt;&amp;ldquo;Wer sein Geschäftsmodell auf Software aufbaut und &lt;strong&gt;skalierbar&lt;/strong&gt; sein möchte, der braucht hochgradig &lt;strong&gt;individuelle&lt;/strong&gt; Prozessanwendungen, muss von Softwareherstellern &lt;strong&gt;unabhängig&lt;/strong&gt; sein und Softwareentwicklung zur Kernkompetenz erklären.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;center style=&#34;margin: 20px&#34;&gt;&lt;img src=&#34;../zalando.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center style=&#34;margin: 20px&#34;&gt;&lt;img src=&#34;../img/zalando.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Die Neuerfindung und Skalierung von Offline-Geschäftsmodellen für Online ist ein Bereich, in dem wir sicher auch weiterhin sehr viele Startups sehen werden. Nicht wenige davon werden auch in den kommenden 10 Jahren die technischen Herausforderungen unterschätzen und die Geduld ihrer Investoren überschätzen. Einige gut beratene Pragmatiker werden Process Engines wie &lt;a href=&#34;http://camunda.org&#34;&gt;camunda.org&lt;/a&gt; einsetzen und damit in der Regel schneller am Markt sein, vor allem aber flexibel bleiben und nicht schon vor dem ersten Launch in die &lt;a href=&#34;http://martinfowler.com/bliki/TechnicalDebt.html&#34;&gt;Technical-Debt&lt;/a&gt;-Falle laufen.&lt;/p&gt;
 
 &lt;p&gt;Das wahre Potential des auf den ersten Blick so ungleichen Paars &amp;ldquo;BPM(N) &amp;amp; Startups&amp;rdquo; bleibt mE aber weiterhin - von beiden Seiten - unterschätzt. Die Aufmerksamkeit füreinander könnte z.B. zunehmen, wenn man mehr als bisher die einfache und flexible Kombinierbarkeit mit alternativen Sprachen der Java Platform wie z.B. Groovy oder Scala in den Mittelpunkt stellt.&lt;/p&gt;
 
-&lt;p&gt;&lt;center style=&#34;margin: 20px&#34;&gt;&lt;img src=&#34;../groovy.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center style=&#34;margin: 20px&#34;&gt;&lt;img src=&#34;../img/groovy.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Man müsste aber auch den Coolness-Faktor heben. camunda ist mit seiner Herangehensweise da auf einem ganz guten Weg. So sehr ich über den Slogan &amp;ldquo;No-Bullshit-BPM&amp;rdquo; schmunzeln muss, zeigt er aber auch, dass man weiterhin an den alten Kommunikationssünden und Marketing&amp;rdquo;strategien&amp;rdquo; Anderer knabbert. Dabei ist camunda tatsächlich &amp;ldquo;no bullshit&amp;rdquo;. Das Alte-Männer-Wort &amp;ldquo;BPM&amp;rdquo; könnte und sollte man aber vielleicht sogar ganz hinter sich lassen. Denn wieviel hat das was Open Source Process Engines heute bieten noch mit dem Enterprise-Gespenst zu tun das IBM &amp;amp; Co vor einem halben Leben in die Welt gesetzt und dann mit jeder Menge Zerocoding Bullshit beworben haben?&lt;/p&gt;
 
-&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../thoughts-about-the-no-bullshit-bpmcon-2013.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../img/thoughts-about-the-no-bullshit-bpmcon-2013.png&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -357,7 +362,7 @@ Freund, Geschäftsführer unserer Berlin Partnerfirma camunda besuchte uns
 und bestaunte mit unseren Gästen den außergewöhnlichen Blick über Wien, den die
 &lt;a href=&#34;http://sky360.at&#34;&gt;Sky360 Business Embassy&lt;/a&gt; zu bieten hat.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../teaser-talk-business-processes-and-software-tests.png&#34; alt=&#34;Blick von der Terrasse&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/teaser-talk-business-processes-and-software-tests.png&#34; alt=&#34;Blick von der Terrasse&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jakob erzählte unseren rund 20 Gästen (fast) alles was es über das Open Source
 Projekt &lt;a href=&#34;http://camunda.org&#34;&gt;camunda BPM&lt;/a&gt; zu wissen lohnt!-) Unsere Impressionen
@@ -369,7 +374,7 @@ fast ein Berliner!&lt;/p&gt;
 wenig die Realität, dass Unternehmen ihre Geschäftsprozesse typischerweise
 über mehrere Softwareanwendungen hinweg &amp;ldquo;ausführen&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../teaser-talk.jpg&#34; alt=&#34;Teaser Talk&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/teaser-talk.jpg&#34; alt=&#34;Teaser Talk&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Diese Anwendungen können mehr (nicht nur, aber auch mittels Prozessautomatisierung)
 oder weniger technisch integriert sein. In beiden Fällen müssen Unternehmen
@@ -377,8 +382,7 @@ sicherstellen, dass ihre Prozesse nach Systemänderungen noch richtig unterstüt
 werden. Sollten sie diese Aufgabe in Zukunft zunehmend automatisieren? Wir haben
 uns dazu die &amp;ldquo;Ökonomie von Software Tests&amp;rdquo; ein wenig angesehen:&lt;/p&gt;
 
-&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;59f162a0a5a80130cc1666da9fcdc82e&#34; 
-data-ratio=&#34;1.41436464088398&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;59f162a0a5a80130cc1666da9fcdc82e&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
 </description>
     </item>
     
@@ -397,7 +401,7 @@ eine mehr als gute Gelegenheit - dann ist seine Antwort darauf eigentlich
 ganz einfach. Im Grunde kommt es eben darauf an, wie genau man das vielleicht
 für manche sperrige, aber doch wichtige, Thema anpackt.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../oss-java-bpmn.png&#34; alt=&#34;camunda verknüpft Java, BMPN and Open Source&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/oss-java-bpmn.png&#34; alt=&#34;camunda verknüpft Java, BMPN and Open Source&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;camunda verbindet mit seiner kürzlich gelaunchten &lt;a href=&#34;http://camunda.org&#34;&gt;BPM
 Platform&lt;/a&gt; die Themen Java, BPMN und Open Source mit dem
@@ -411,7 +415,7 @@ wurde. Schön und gut. Aber warum wirklich sollte man in Erwägung ziehen von
 einer Mini-Firma wie camunda Dienstleistungen dazuzukaufen - und nicht doch
 von einem der vertrauenswürdigen, älteren Herren?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;ibm-oracle-sap-camunda.png&#34; alt=&#34;camunda ist klein.&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/ibm-oracle-sap-camunda.png&#34; alt=&#34;camunda ist klein.&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Für eine solche Kaufentscheidung wurde ja wohl noch kein Manager gefeuert, oder?
 Ich vermute, diese Gewissheit wird sich noch in diesem Jahrzehnt verflüchtigen.
@@ -427,7 +431,7 @@ zu können. Und die eigenen softwaregestützten Geschäftsprozesse am Ende des
 Tages deshalb im Griff zu haben, weil man statt auf formale Sicherheit auf reale
 Sicherheit setzt. Gewissermassen auf die leichtgewichtige Seite der Macht:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../ibm-oracle-sap-camunda-java.png&#34; alt=&#34;Ist camunda klein?&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/ibm-oracle-sap-camunda-java.png&#34; alt=&#34;Ist camunda klein?&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Die Überlegung ist zumindest nicht ganz falsch. Eure Meinungen zu dieser von
 Jakob Freund präsentierten These würden mich ja sehr interessieren. Die
@@ -455,7 +459,7 @@ GmbH&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Es war mir eine Freude, Jakob in Wien gehabt zu haben.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../presenting-camunda-bpm-in-vienna.png&#34; alt=&#34;Jakob Freund in Wien&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/presenting-camunda-bpm-in-vienna.png&#34; alt=&#34;Jakob Freund in Wien&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;(Foto Credits für &lt;a href=&#34;https://twitter.com/rafacm/status/335106059326869504/photo/1&#34;&gt;Rafael Cordones&lt;/a&gt;)&lt;/p&gt;
 </description>
@@ -494,15 +498,15 @@ Status der vom Projekt-Lead Daniel Meyer angekündigten Contribution:&lt;/p&gt;
 
 &lt;p&gt;Und so hat das dann bei der &lt;a href=&#34;http://www.bpmcon.de&#34;&gt;BPMCon 2012&lt;/a&gt; in Berlin &amp;lsquo;live&amp;rsquo; ausgesehen: :-)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../our-pecha-kucha-in-berlin.png&#34; alt=&#34;Martin Schimak auf der BPMCon 2012&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/our-pecha-kucha-in-berlin.png&#34; alt=&#34;Martin Schimak auf der BPMCon 2012&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../online.jpg&#34; alt=&#34;Sind wir online? :-)&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/online.jpg&#34; alt=&#34;Sind wir online? :-)&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Und last not least unser kleiner Vortrag zu&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/plexiti/bpmn-prozessanwendungen-mit-java-ee-6-ein-beispiel-und-quickstart&#34;&gt;BPMN Prozessanwendungen mit Java EE 6&lt;/a&gt; über Slideshare:&lt;/p&gt;
 
-&lt;iframe src=&#34;http://de.slideshare.net/slideshow/embed_code/14315962&#34; width=&#34;640&#34; height=&#34;521&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; ng-style=&#34;style()&#34; resize allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;http://de.slideshare.net/slideshow/embed_code/14315962&#34; width=&#34;640&#34; height=&#34;521&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; ng-style=&#34;style()&#34; resize allowfullscreen&gt; &lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://de.slideshare.net/plexiti/bpmn-prozessanwendungen-mit-java-ee-6-ein-beispiel-und-quickstart&#34;&gt;BPMN Prozessanwendungen mit Java EE 6 – ein Beispiel und Quickstart&lt;/a&gt;&lt;/strong&gt;
 from &lt;a href=&#34;http://de.slideshare.net/plexiti&#34;&gt;plexiti&lt;/a&gt;&lt;/p&gt;
@@ -522,7 +526,7 @@ als Beispiel ausführlichst beschriebenen
 &lt;a href=&#34;http://www.bpm-guide.de/2010/08/06/praxishandbuch-bpmn-2-auflage-ab-mitte-september/?lang_pref=de&#34;&gt;Stellenausschreibung&lt;/a&gt;
 ist fertig *!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://the-job-announcement.com/&#34;&gt;&lt;img src=&#34;../the-job-announcement-showcase-is-done.png&#34; alt=&#34;The Job Announcement&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://the-job-announcement.com/&#34;&gt;&lt;img src=&#34;../img/the-job-announcement-showcase-is-done.png&#34; alt=&#34;The Job Announcement&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Unser Ziel ist nicht nur zum &lt;a href=&#34;http://the-job-announcement.com/&#34;&gt;Selber spielen&lt;/a&gt; einzuladen,
 sondern auch eine auf &lt;a href=&#34;http://www.camunda.com/fox&#34;&gt;camunda fox&lt;/a&gt;,
@@ -536,7 +540,7 @@ herunterladen.&lt;/p&gt;
 Inhalten und Anleitungen zum Ausprobieren. Trotzdem: ganz oben auf der Agenda steht nun
 mehr Dokumentation - wir finden die ist ganz eindeutig noch nicht groß genug! (Ehrlich jetzt.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;../cartoon.jpg&#34; alt=&#34;Soviel Dokumentation&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/cartoon.jpg&#34; alt=&#34;Soviel Dokumentation&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;[Credits to &lt;a href=&#34;http://writersua.com/articles/quickref/&#34;&gt;writersua.com&lt;/a&gt;]&lt;/p&gt;
 

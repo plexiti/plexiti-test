@@ -364,3 +364,31 @@ figure p + img {
 .disqus-comment-count.en i.pl::after {
     content: "comments";
 }
+
+.read-the-discussion i {
+  font-style: normal;
+}
+
+.read-the-discussion b {
+  /* font-weight: normal; */
+}
+
+.read-the-discussion i::before {
+    content: " "
+}
+
+.read-the-discussion.de i.sg::after {
+    content: "Minute";
+}
+
+.read-the-discussion.de i.pl::after {
+    content: "Minuten";
+}
+
+.read-the-discussion.en i.sg::after {
+    content: "minute";
+}
+
+.read-the-discussion.en i.pl::after {
+    content: "minutes";
+}
