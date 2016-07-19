@@ -329,10 +329,38 @@ figure p + img {
     margin-top: 0px;
 }
 
-.disqus-comment-count b:before {
+.disqus-comment-count i {
+  font-style: normal;
+}
+
+.disqus-comment-count b {
+  /* font-weight: normal; */
+}
+
+.disqus-comment-count b::before {
     content: "(";
 }
 
-.disqus-comment-count b:after {
-    content: " Kommentare)";
+.disqus-comment-count b::after {
+    content: ")";
+}
+
+.disqus-comment-count i::before {
+    content: " "
+}
+
+.disqus-comment-count.de i.sg::after {
+    content: "Kommentar";
+}
+
+.disqus-comment-count.de i.pl::after {
+    content: "Kommentare";
+}
+
+.disqus-comment-count.en i.sg::after {
+    content: "comment";
+}
+
+.disqus-comment-count.en i.pl::after {
+    content: "comments";
 }
