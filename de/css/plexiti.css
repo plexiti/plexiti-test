@@ -422,3 +422,17 @@ pre .close:hover, pre .close:focus {
   cursor: auto;
   opacity: inherit;
 }
+
+/* Language Selector */
+#social_media_wrapper {
+    padding: 5px 5px 7px 5px;
+    position: absolute;
+    right: 45px;
+}
+#social_media_wrapper i.fa {
+    font-family: 'Plexiti Bariol';
+    font-weight: bold;
+    position: relative;
+    top: -1px;
+    left: 0px;
+}
