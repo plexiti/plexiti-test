@@ -436,3 +436,28 @@ pre .close:hover, pre .close:focus {
     top: -1px;
     left: 0px;
 }
+
+.columns {
+    column-gap: 30px;
+    padding-bottom: 17px;
+    margin-bottom: 30px;
+    border-bottom: dashed 1px #ccc;
+}
+
+.col-xs-12 .columns {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+}
+
+.col-sm-12 .columns {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+}
+
+.col-md-12 .columns {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+}
