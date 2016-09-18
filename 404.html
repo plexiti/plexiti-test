@@ -3,12 +3,7 @@
 <head>
   <script src='https://plexiti.github.io/plexiti-test/de/js/lang.js'></script>
   <script>
-    var langCode = getCookie('lang');
-    if (langCode && langCode != 'de') {
-      var path = window.location.pathname;
-      path = '/' + langCode + path.substr(3, path.length - 1);
-      window.location.pathname = path;
-    }
+    redirect2language('de');
   </script>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
   <meta charset='utf-8'>
