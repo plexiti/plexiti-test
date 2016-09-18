@@ -20,10 +20,10 @@ function getCookie(cname) {
     return "";
 }
 
-function redirect2language(requestedLang) {
-    var hostName = document.referrer.split('/')[2];
+function redirect2language(requestedLang, hostingHost) {
+    var referrer = document.referrer;
     var langCode = getCookie('lang');
-    if (hostName && hostName !== 'plexiti.com' && langCode && langCode !== requestedLang) {
+    if (referrer && !referrer.startsWith(hostingHost) && langCode && langCode !== requestedLang) {
         var path = window.location.pathname;
         path = '/' + langCode + path.substr(3, path.length - 1);
         window.location.pathname = path;
