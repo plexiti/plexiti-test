@@ -25,7 +25,7 @@ function redirect2language(requestedLang, hostingHost) {
     var langCode = getCookie('lang');
     if (referrer && !referrer.startsWith(hostingHost) && langCode && langCode !== requestedLang) {
         var path = window.location.pathname;
-        path = '/' + langCode + path.substr(3, path.length - 1);
+        href = hostingHost + langCode + path.substr(3, path.length - 1);
         window.location.pathname = path;
     }
 }
