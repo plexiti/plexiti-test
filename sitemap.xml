@@ -3,4 +3,7 @@
    <sitemap>
       <loc>https://plexiti.github.io/plexiti-test/de/sitemap.xml</loc>
    </sitemap>
+   <sitemap>
+      <loc>https://plexiti.github.io/plexiti-test/en/sitemap.xml</loc>
+   </sitemap>
 </sitemapindex>

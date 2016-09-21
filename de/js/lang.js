@@ -19,25 +19,3 @@ function getCookie(cname) {
     }
     return "";
 }
-
-function redirect2language(requestedLang, hostingHost) {
-    var referrer = document.referrer;
-    var langCode = getCookie('lang');
-    if (referrer && !referrer.startsWith(hostingHost) && langCode && langCode !== requestedLang) {
-        var path = window.location.pathname;
-        href = hostingHost + langCode + path.substr(3, path.length - 1);
-        window.location.pathname = path;
-    }
-}
-
-function redirect2blog() {
-    var langCode = getCookie('lang') || navigator.language || navigator.systemLanguage;
-    var lang = langCode.toLowerCase();
-    lang = lang.substr(0,2);
-    var dest = window.location.href;
-    if (lang=="de") {
-        window.location.pathname = window.location.pathname + "de/blog/"
-    } else {
-        window.location.pathname = window.location.pathname + "en/blog/"
-    }
-}
