@@ -21,11 +21,12 @@ function getCookie(cname) {
 }
 
 function redirect2language(contextPath) {
+    console.log("contextPath: " + contextPath);
     var referrer = document.referrer;
     console.log("referrer: " + referrer);
-    var contextHost = contextPath.substr(0, contextPath.length - 4);
+    var contextHost = contextPath.substr(0, contextPath.length - 3);
     console.log("contextHost: " + contextHost);
-    if (referrer && !referrer.startsWith(contextHost)) {
+    if (!referrer || !referrer.startsWith(contextHost)) {
         var userLang = getCookie('lang');
         console.log("userLang: " + userLang);
         var contextLang = contextPath.substr(contextPath.length - 3, contextPath.length - 2);
