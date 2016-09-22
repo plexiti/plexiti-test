@@ -24,16 +24,17 @@ function redirect2language(contextPath) {
     console.log("contextPath: " + contextPath);
     var referrer = document.referrer;
     console.log("referrer: " + referrer);
-    var contextHost = contextPath.substr(0, contextPath.length - 3);
+    var idx = contextPath.length - 3;
+    var contextHost = contextPath.substr(0, idx);
     console.log("contextHost: " + contextHost);
-    if (!referrer || !referrer.startsWith(contextHost)) {
-        var userLang = getCookie('lang');
-        console.log("userLang: " + userLang);
-        var contextLang = contextPath.substr(contextPath.length - 3, contextPath.length - 3);
-        console.log("contextLang: " + contextLang);
+    var userLang = getCookie('lang');
+    console.log("userLang: " + userLang);
+    var contextLang = contextPath.substr(idx, idx);
+    console.log("contextLang: " + contextLang);
+    var path = window.location.pathname.replace('/' + contextLang + '/', '/' + userLang + '/');
+    console.log("path: " + path);
+    if (referrer && !referrer.startsWith(contextHost)) {
         if (contextLang !== userLang) {
-            var path = window.location.pathname.replace('/' + contextLang + '/', '/' + userLang + '/');
-            console.log("path: " + path);
             window.location.pathname = path;
         }
     }
