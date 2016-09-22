@@ -29,7 +29,7 @@ function redirect2language(contextPath) {
     if (!referrer || !referrer.startsWith(contextHost)) {
         var userLang = getCookie('lang');
         console.log("userLang: " + userLang);
-        var contextLang = contextPath.substr(contextPath.length - 3, contextPath.length - 2);
+        var contextLang = contextPath.substr(contextPath.length - 3, contextPath.length - 3);
         console.log("contextLang: " + contextLang);
         if (contextLang !== userLang) {
             var path = window.location.pathname.replace('/' + contextLang + '/', '/' + userLang + '/');
