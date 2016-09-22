@@ -21,33 +21,26 @@ function getCookie(cname) {
 }
 
 function redirect2language(contextPath) {
-    console.log("contextPath: " + contextPath);
-    var referrer = document.referrer;
-    console.log("referrer: " + referrer);
-    var idx = contextPath.length - 3;
-    var contextHost = contextPath.substr(0, idx);
-    console.log("contextHost: " + contextHost);
-    var userLang = getCookie('lang');
-    console.log("userLang: " + userLang);
-    var contextLang = contextPath.substr(idx, 2);
-    console.log("contextLang: " + contextLang);
-    var path = window.location.pathname.replace('/' + contextLang + '/', '/' + userLang + '/');
-    console.log("path: " + path);
-    if (referrer && !referrer.startsWith(contextHost)) {
-        if (contextLang !== userLang) {
+    var contextHost = contextPath.substr(0, contextPath.length - 3);
+    if (document.referrer && !document.referrer.startsWith(contextHost)) {
+        var pathLanguage = contextPath.substr(contextPath.length - 3, 2);
+        var userLanguage = getUserLanguage();
+        if (pathLanguage !== userLanguage) {
+            var path = window.location.pathname.replace('/' + pathLanguage + '/', '/' + userLanguage + '/');
             window.location.pathname = path;
         }
     }
 }
 
 function redirect2blog() {
-    var langCode = getCookie('lang') || navigator.language || navigator.systemLanguage;
-    var lang = langCode.toLowerCase();
-    lang = lang.substr(0,2);
-    var dest = window.location.href;
+    var lang = getUserLanguage();
     if (lang=="de") {
         window.location.pathname = window.location.pathname + "de/blog/"
     } else {
         window.location.pathname = window.location.pathname + "en/blog/"
     }
+}
+
+function getUserLanguage() {
+    return (getCookie('lang') || navigator.language || navigator.systemLanguage).toLowerCase().substr(0,2);
 }
