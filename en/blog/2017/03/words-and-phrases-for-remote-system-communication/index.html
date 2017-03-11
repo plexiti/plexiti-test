@@ -98,9 +98,22 @@
 
 <p>I regularly read phrases as <strong>&ldquo;synchronous request/reply like REST&rdquo;</strong> or e.g. <strong>&ldquo;pub/sub patterns requiring messaging&rdquo;</strong>. As my brain always reaches out to &ldquo;understand&rdquo; a more complete truth hidden beneath statements :-) it then subconsciously starts to work on the concepts and terms. In this case the typical lingo used when people talk about system-to-system communication.</p>
 
+<figure>
+    
+    
+    
+    
+    
+    
+    
+    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/words-and-phrases-for-remote-system-communication.png' >
+</figure>
+
+
+
 <h1 id="tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</h1>
 
-<p>While my brain goes into digesting mode, somebody might already shout: &ldquo;Wrong!&rdquo; :-) I often prefer to stay quiet. Most of the time such statements are really &ldquo;close enough&rdquo; anyway. We understand each other in the specific context of what is being said. People already know that REST can be used in a more &ldquo;asynchronous&rdquo; fashion of communication, too. And yes: one won&rsquo;t necessarily need messaging infrastructure for a publish/subscribe paradigm of delivering some infos. In a given context, though, it might well be the easiest solution to realise the paradigm.</p>
+<p>While my brain goes into digesting mode, somebody might already shout: <strong>&ldquo;Wrong!&rdquo;</strong> :-) I often prefer to stay quiet. Most of the time such statements are really &ldquo;close enough&rdquo; anyway. We understand each other in the specific context of what is being said. People already know that REST can be used in a more &ldquo;asynchronous&rdquo; fashion of communication, too. And yes: one won&rsquo;t necessarily need messaging infrastructure for a publish/subscribe paradigm of delivering some infos. In a given context, though, it might well be the easiest solution to realise the paradigm.</p>
 
 <h1 id="digesting-the-system-communication-lingo">Digesting the system communication lingo</h1>
 
@@ -110,35 +123,35 @@
 
 <h1 id="recipients-which-partner-s-do-we-have"><strong>Recipients</strong>. Which partner(s) do we have?</h1>
 
-<p>A <strong>Sender/Receiver</strong> model of communication transmits a message from one single sender to one single recipient. The recipient is offering a means of receiving a message, the sender decides to make use of it.</p>
+<p>A <strong>Point-to-Point</strong> model of communication transmits a message from one single sender to one single recipient. The recipient is offering a means of receiving a message, the sender decides to make use of it.</p>
 
-<p>A <strong>Publisher/Subscriber</strong> model of communication transmits a message from one sender to (potentially) many recipients. The sender acts as &ldquo;publisher&rdquo; by offering a message to a more general public, the potential recipients become &ldquo;subscribers&rdquo; when they decide to make use of it.</p>
+<p>A <strong>Publish-and-Subscribe</strong> model of communication transmits a message from one sender to (potentially) many recipients. The sender acts as &ldquo;publisher&rdquo; by offering a message to a more general public, the potential recipients become &ldquo;subscribers&rdquo; when they decide to make use of it.</p>
 
-<h1 id="delivery-do-we-care-about-reception"><strong>Delivery</strong>. Do we care about reception?</h1>
+<h1 id="acknowledgement-do-we-care-about-delivery"><strong>Acknowledgement</strong>. Do we care about delivery?</h1>
 
-<p><strong>Positive Acknowledgement</strong> based communication means that successful delivery of a message is explicitly acknowledged by the recipient.</p>
+<p><strong>Positive Acknowledgement</strong> based communication means that successful delivery is explicitly acknowledged by the recipient.</p>
 
-<p><strong>Negative Acknowledgement</strong> based communication means that just unsuccessful delivery of a message is explicitly rejected by the recipient.</p>
+<p><strong>Negative Acknowledgement</strong> based communication means that just an unsuccessful delivery is explicitly rejected by the recipient.</p>
 
 <h1 id="reply-do-we-talk-one-way-or-two-ways"><strong>Reply</strong>. Do we talk one-way or two-ways?</h1>
 
-<p><strong>Fire/Forget</strong> refers to a one-way messaging pattern. The sender does not care about a specific business domain related answer or reaction.</p>
+<p><strong>Fire/Forget</strong> refers to a one-way communications pattern. The sender does not care about a specific business domain related answer or reaction. However, it might still care about an acknowledgement.</p>
 
-<p><strong>Request/Reply</strong> refers to a two-way messaging pattern. The sender needs a specific business domain related reply or reaction.</p>
+<p><strong>Request/Reply</strong> refers to a two-way communications pattern. The sender needs a specific business domain related reply or reaction. It might also care about an acknowledgement.</p>
 
 <h1 id="execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</h1>
 
-<p><strong>Synchronous</strong> transmission blocks the sending process until the business domain related operation on the recipient&rsquo;s side &ldquo;completes&rdquo;.</p>
+<p><strong>Synchronous</strong> communication blocks the sending process until the business domain related operation on the recipient&rsquo;s side completes.</p>
 
-<p><strong>Asynchronous</strong> transmission does not block the sending process until the business domain related operation on the recipient&rsquo;s side &ldquo;completes&rdquo;. The sender either does not care about any such operation or does care, but only initiates it.</p>
+<p><strong>Asynchronous</strong> communication does not block the sending process until the business domain related operation on the recipient&rsquo;s side completes. The sender either does not care about any such operation or does care, but only initiates it.</p>
 
 <h1 id="intent-what-is-the-purpose-of-communication"><strong>Intent</strong>. What is the purpose of communication?</h1>
 
-<p>An <strong>Event</strong> (message) communicates a business domain relevant fact of the past. The sender informs that something relevant occurred on its side.</p>
+<p>An <strong>Event</strong> communicates a relevant fact of the business domain. The sender informs that something relevant occurred on its side.</p>
 
-<p>A <strong>Command</strong> (message) communicates that a business domain relevant operation should happen on the recipient&rsquo;s side.</p>
+<p>A <strong>Command</strong> communicates that a business domain relevant operation should happen on the recipient&rsquo;s side.</p>
 
-<p>A <strong>Document</strong> (message) communicates current status of the business domain.</p>
+<p>A <strong>Document</strong> (message) communicates the current status of the business domain on the sender&rsquo;s side.</p>
 
 <h1 id="direction-who-is-the-initiating-partner"><strong>Direction</strong>. Who is the initiating partner?</h1>
 
@@ -146,21 +159,15 @@
 
 <p><strong>Pull</strong> direction means that the receiver initiates the transmission of business domain related information to itself. It is &ldquo;demand driven&rdquo; in the sense that the sender passively waits until a recipient interrupts by requesting content.</p>
 
-<h1 id="style-which-architectural-patterns-do-we-use"><strong>Style</strong>. Which architectural patterns do we use?</h1>
+<h1 id="architecture-which-style-do-we-use"><strong>Architecture</strong>. Which style do we use?</h1>
 
-<p><strong>REST</strong> Style &hellip;</p>
+<p><strong>REST</strong> (Representational State Transfer) enables separate applications to work together by requesting and manipulating textual representations of resources using a uniform and predefined set of stateless operations. It relies on a cacheable client-server communications protocol &ndash; and in virtually all cases, the <strong>HTTP</strong> protocol is used.</p>
 
-<p><strong>Messaging</strong> Style &hellip;</p>
-
-<h1 id="protocol-via-which-channels-do-we-transmit"><strong>Protocol</strong>. Via which channels do we transmit?</h1>
-
-<p>The <strong>HTTP</strong> protocol &hellip;</p>
-
-<p>The <strong>AMQP</strong> protocol &hellip;</p>
+<p><strong>Messaging</strong> enables separate applications to work together in a decoupled fashion such that applications can be easily added or removed without affecting the others. A connecting message-oriented middleware is used that allows different systems to exchange messages through a shared set of interfaces. It relies on a client-broker interface such as <strong>AMQP</strong>.</p>
 
 <h1 id="what-do-you-think">What do YOU think?</h1>
 
-<p>I would love to get feedback on what my googling capabilities :-) in combination with some personal style of thinking came up with here.</p>
+<p>I would love to get some feedback on what my googling capabilities came up with here. :-) Jokes aside, I also hope that the post helps to thin out the fog a bit. It&rsquo;s the kind of fog which is always produced when <strong>words</strong> quite often come along in the form of intertwined <strong>phrases</strong>&hellip;</p>
 
                               </div>
                          </article>
@@ -190,13 +197,12 @@
 <li><a href="#tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</a></li>
 <li><a href="#digesting-the-system-communication-lingo">Digesting the system communication lingo</a></li>
 <li><a href="#recipients-which-partner-s-do-we-have"><strong>Recipients</strong>. Which partner(s) do we have?</a></li>
-<li><a href="#delivery-do-we-care-about-reception"><strong>Delivery</strong>. Do we care about reception?</a></li>
+<li><a href="#acknowledgement-do-we-care-about-delivery"><strong>Acknowledgement</strong>. Do we care about delivery?</a></li>
 <li><a href="#reply-do-we-talk-one-way-or-two-ways"><strong>Reply</strong>. Do we talk one-way or two-ways?</a></li>
 <li><a href="#execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</a></li>
 <li><a href="#intent-what-is-the-purpose-of-communication"><strong>Intent</strong>. What is the purpose of communication?</a></li>
 <li><a href="#direction-who-is-the-initiating-partner"><strong>Direction</strong>. Who is the initiating partner?</a></li>
-<li><a href="#style-which-architectural-patterns-do-we-use"><strong>Style</strong>. Which architectural patterns do we use?</a></li>
-<li><a href="#protocol-via-which-channels-do-we-transmit"><strong>Protocol</strong>. Via which channels do we transmit?</a></li>
+<li><a href="#architecture-which-style-do-we-use"><strong>Architecture</strong>. Which style do we use?</a></li>
 <li><a href="#what-do-you-think">What do YOU think?</a></li>
 </ul>
 </nav>
@@ -212,7 +218,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 700  /  184 );
+                         var numbers = Math.ceil( 818  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <span class='read-the-discussion en'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                          $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... and join the discussion! <span class='disqus-comment-count en' data-disqus-identifier='/en\/blog\/2017\/03\/words-and-phrases-for-remote-system-communication\/'></span></a></li>");
