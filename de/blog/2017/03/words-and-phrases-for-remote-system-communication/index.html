@@ -139,12 +139,6 @@
 
 <p><strong>Request/Reply</strong> refers to a two-way communications pattern. The sender needs a specific business domain related reply or reaction. It might also care about an acknowledgement.</p>
 
-<h1 id="execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</h1>
-
-<p><strong>Synchronous</strong> communication blocks the sending process until the business domain related operation on the recipient&rsquo;s side completes.</p>
-
-<p><strong>Asynchronous</strong> communication does not block the sending process until the business domain related operation on the recipient&rsquo;s side completes. The sender either does not care about any such operation or does care, but only initiates it.</p>
-
 <h1 id="intent-what-is-the-purpose-of-communication"><strong>Intent</strong>. What is the purpose of communication?</h1>
 
 <p>An <strong>Event</strong> communicates a relevant fact of the business domain. The sender informs that something relevant occurred on its side.</p>
@@ -158,6 +152,12 @@
 <p><strong>Push</strong> direction means that the sender initiates the transmission of business domain related information to the receiver. It is &ldquo;event driven&rdquo; in the sense that the sender identifies information potentially interesting for the receiver and transmits it.</p>
 
 <p><strong>Pull</strong> direction means that the receiver initiates the transmission of business domain related information to itself. It is &ldquo;demand driven&rdquo; in the sense that the sender passively waits until a recipient interrupts by requesting content.</p>
+
+<h1 id="execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</h1>
+
+<p><strong>Synchronous</strong> communication blocks the initiator until the business domain related operation on the recipient&rsquo;s side completes.</p>
+
+<p><strong>Asynchronous</strong> communication does not block the initiator until a business domain related operation on the recipient&rsquo;s side completes. The initiator either does not care about such an operation or does care, but only initiates it.</p>
 
 <h1 id="architecture-which-style-do-we-use"><strong>Architecture</strong>. Which style do we use?</h1>
 
@@ -199,9 +199,9 @@
 <li><a href="#recipients-which-partner-s-do-we-have"><strong>Recipients</strong>. Which partner(s) do we have?</a></li>
 <li><a href="#acknowledgement-do-we-care-about-delivery"><strong>Acknowledgement</strong>. Do we care about delivery?</a></li>
 <li><a href="#reply-do-we-talk-one-way-or-two-ways"><strong>Reply</strong>. Do we talk one-way or two-ways?</a></li>
-<li><a href="#execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</a></li>
 <li><a href="#intent-what-is-the-purpose-of-communication"><strong>Intent</strong>. What is the purpose of communication?</a></li>
 <li><a href="#direction-who-is-the-initiating-partner"><strong>Direction</strong>. Who is the initiating partner?</a></li>
+<li><a href="#execution-do-we-block-until-completion"><strong>Execution</strong>. Do we block until completion?</a></li>
 <li><a href="#architecture-which-style-do-we-use"><strong>Architecture</strong>. Which style do we use?</a></li>
 <li><a href="#what-do-you-think">What do YOU think?</a></li>
 </ul>
@@ -218,7 +218,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 818  /  184 );
+                         var numbers = Math.ceil( 816  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Lies\x27 diesen Beitrag in ca. <span class='read-the-discussion de'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                          $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... und diskutier\x27 mit! <span class='disqus-comment-count de' data-disqus-identifier='/de\/blog\/2017\/03\/words-and-phrases-for-remote-system-communication\/'></span></a></li>");
