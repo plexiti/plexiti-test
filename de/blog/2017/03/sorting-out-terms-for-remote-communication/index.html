@@ -111,16 +111,6 @@
 
 
 
-<h1 id="tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</h1>
-
-<p>While my brain goes into digesting mode, somebody might already shout: <strong>&ldquo;Wrong!&rdquo;</strong> :-) I often prefer to stay quiet. Most of the time such statements are really &ldquo;close enough&rdquo; anyway. We understand each other in the specific context of what is being said. People already know that REST can be used in a more &ldquo;asynchronous&rdquo; fashion of communication, too. And yes: one won&rsquo;t necessarily need messaging infrastructure for a publish/subscribe paradigm of delivering some infos. In a given context, though, it might well be the easiest solution to realise the paradigm.</p>
-
-<h1 id="digesting-the-remote-communication-lingo">Digesting the remote communication lingo</h1>
-
-<p>But then, I felt it is useful for myself to write down some of the more prominent lingo like <strong>asynchronous</strong>, <strong>events</strong> and <strong>pub/sub</strong> and ask myself: what are the real &ldquo;categories of the same thing&rdquo;? What are therefore things that exclude each other? Because: if two things do not exclude each other, they can quite often be combined with each other! Being aware of that results in more conscious and therefore more useful knowledge to me.</p>
-
-<p><strong>A small disclaimer</strong>: I am talking here in the context of quite &ldquo;high level&rdquo;, business domain related communication in between remote and distributed systems like e.g. Microservices. When going down to the lower, more technical layers of systems communication, concepts and terms might be used with (more or less) different meanings.</p>
-
 <h1 id="1-recipients-which-partner-s-do-we-have"><strong>(1) Recipients</strong>: Which partner(s) do we have?</h1>
 
 <p>A <strong>Point-to-Point</strong> model of communication transmits a message from one single sender to one single recipient. The recipient is offering a means of receiving a message, the sender decides to make use of it.</p>
@@ -149,9 +139,13 @@
 
 <h1 id="5-direction-who-is-the-initiating-partner"><strong>(5) Direction</strong>: Who is the initiating partner?</h1>
 
-<p><strong>Push</strong> direction means that the sender initiates the transmission of business domain related information to the receiver. It is &ldquo;event driven&rdquo; in the sense that the sender identifies information potentially interesting for the receiver and transmits it.</p>
+<blockquote>
+<p>Request driven software speaks when spoken to, event driven software speaks when it has something to say. <cite>Jon Udell</cite></p>
+</blockquote>
 
-<p><strong>Pull</strong> direction means that the receiver initiates the transmission of business domain related information to itself. It is &ldquo;demand driven&rdquo; in the sense that the sender passively waits until a recipient interrupts by requesting content.</p>
+<p><strong>Pull</strong> direction means that the receiver initiates the transmission of business domain related information to itself. It is &ldquo;request driven&rdquo; in the sense that the sender passively waits until a recipient interrupts by requesting content.</p>
+
+<p><strong>Push</strong> direction means that the sender initiates the transmission of business domain related information to the receiver. It is &ldquo;event driven&rdquo; in the sense that the sender identifies information potentially interesting for the receiver and transmits it.</p>
 
 <h1 id="6-execution-do-we-block-until-completion"><strong>(6) Execution</strong>: Do we block until completion?</h1>
 
@@ -165,9 +159,17 @@
 
 <p><strong>Messaging</strong> enables separate applications to work together in a decoupled fashion such that applications can be easily added or removed without affecting the others. A connecting message-oriented middleware is used that allows different systems to exchange messages through a shared set of interfaces. It relies on a client-broker protocol such as <strong>AMQP</strong>.</p>
 
+<h1 id="tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</h1>
+
+<p>When I hear phrases as <strong>&ldquo;synchronous request/reply like REST&rdquo;</strong> or e.g. <strong>&ldquo;pub/sub patterns requiring messaging&rdquo;</strong> somebody might already shout: <strong>&ldquo;Wrong!&rdquo;</strong> :-) I often prefer to stay quiet. Most of the time such statements are really &ldquo;close enough&rdquo; anyway. We understand each other in the specific context of what is being said. People already know that REST can be used in a more &ldquo;asynchronous&rdquo; fashion of communication, too. And yes: one won&rsquo;t necessarily need messaging infrastructure for a publish/subscribe paradigm of delivering some infos.</p>
+
+<p>However, I felt it is useful for myself to write down some of the more prominent lingo like asynchronous, events and pub/sub and ask myself: what are the real &ldquo;categories of the same thing&rdquo;? What are therefore things that exclude each other? Because: <strong>if two things do not exclude each other, they can quite often be combined with each other</strong>! Being aware of that results in more conscious and therefore more useful knowledge to me.</p>
+
 <h1 id="what-do-you-think">What do YOU think?</h1>
 
 <p>I would love to get some feedback on what my googling capabilities came up with here. :-) Jokes aside, I also hope that the post helps to thin out the fog a bit. It&rsquo;s the kind of fog which is always produced when <strong>words</strong> too often come along in the form of intertwined <strong>phrases</strong>&hellip;</p>
+
+<p><strong>A small disclaimer</strong>: I am talking here in the context of quite &ldquo;high level&rdquo;, business domain related communication in between remote and distributed systems like e.g. Microservices. When going down to the lower, more technical layers of systems communication, concepts and terms might be used with (more or less) different meanings.</p>
 
                               </div>
                          </article>
@@ -194,8 +196,6 @@
                          <div class='bs-docs-sidebar hidden-print affix-top' role='complementary' data-spy='affix' data-offset-top='318' data-offset-bottom='405'>
                               <nav id="TableOfContents">
 <ul>
-<li><a href="#tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</a></li>
-<li><a href="#digesting-the-remote-communication-lingo">Digesting the remote communication lingo</a></li>
 <li><a href="#1-recipients-which-partner-s-do-we-have"><strong>(1) Recipients</strong>: Which partner(s) do we have?</a></li>
 <li><a href="#2-acknowledgement-do-we-verify-delivery"><strong>(2) Acknowledgement</strong>: Do we verify delivery?</a></li>
 <li><a href="#3-reply-do-we-talk-one-way-or-two-ways"><strong>(3) Reply</strong>: Do we talk one-way or two-ways?</a></li>
@@ -203,6 +203,7 @@
 <li><a href="#5-direction-who-is-the-initiating-partner"><strong>(5) Direction</strong>: Who is the initiating partner?</a></li>
 <li><a href="#6-execution-do-we-block-until-completion"><strong>(6) Execution</strong>: Do we block until completion?</a></li>
 <li><a href="#7-architecture-which-style-do-we-use"><strong>(7) Architecture</strong>: Which style do we use?</a></li>
+<li><a href="#tolerant-readers-complain-seldomly">Tolerant readers complain seldomly :-)</a></li>
 <li><a href="#what-do-you-think">What do YOU think?</a></li>
 </ul>
 </nav>
@@ -218,7 +219,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 822  /  184 );
+                         var numbers = Math.ceil( 827  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Lies\x27 diesen Beitrag in ca. <span class='read-the-discussion de'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                          $('#TableOfContents ul').append("<li class='disqus_link'><a href='#disqus'><i class='fa fa-comments'></i> ... und diskutier\x27 mit! <span class='disqus-comment-count de' data-disqus-identifier='/de\/blog\/2017\/03\/sorting-out-terms-for-remote-communication\/'></span></a></li>");
