@@ -11,9 +11,27 @@
     
     
     
-    <lastBuildDate>Fri, 10 Mar 2017 19:44:26 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 21 Mar 2017 09:00:00 +0100</lastBuildDate>
     
     <atom:link href="https://plexiti.github.io/plexiti-test/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Decoupling Event Driven Hippies</title>
+      <link>https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/</link>
+      <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
+      <author>Martin Schimak</author>
+      <guid>https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservices Collaboration Styles</title>
+      <link>https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/</link>
+      <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
+      <author>Martin Schimak</author>
+      <guid>https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/</guid>
+      <description>When implementing logical flows along business processes, we can follow two styles of architecture: orchestration and choreography.</description>
+    </item>
     
     <item>
       <title>Sorting out Terms for Remote Communication</title>
@@ -40,6 +58,15 @@
       <author>Martin Schimak</author>
       <guid>https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/</guid>
       <description>This blog post is the first one in a small series of blog posts about &amp;ldquo;scenario&amp;rdquo;-testing.</description>
+    </item>
+    
+    <item>
+      <title>Ein Test Blog Post mit allen Medientypen</title>
+      <link>https://plexiti.github.io/plexiti-test/en/blog/2016/07/a-test-blog-post-showing-off-all-gadgets/</link>
+      <pubDate>Wed, 13 Jul 2016 21:29:07 +0200</pubDate>
+      <author>Martin Schimak</author>
+      <guid>https://plexiti.github.io/plexiti-test/en/blog/2016/07/a-test-blog-post-showing-off-all-gadgets/</guid>
+      <description>Dieser Test Blog Post zeigt alle Möglichkeiten auf Text darzustellen und jene Medientypen einzubinden, die ich bisher zur Verwendung in Blog Posts implementiert habe.</description>
     </item>
     
   </channel>
