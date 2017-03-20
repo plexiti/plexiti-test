@@ -6,7 +6,7 @@
   <meta charset='utf-8'>
   
       
-      <title>Decoupling Event Driven Hippies</title>
+      <title>Avoiding Accidental Coupling of Microservices</title>
       
   
     <link href='https://plexiti.github.io/plexiti-test/en/blog/index.xml' rel='alternate' type='application/rss+xml' title='plexiti - (de)coding domain knowledge blog' />
@@ -79,8 +79,8 @@
 <div class='main' id='post'>
      <section class='hgroup'>
           <div class='container'>
-               <h1>Decoupling Event Driven Hippies</h1>
-               <h2><span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
+               <h1>Avoiding Accidental Coupling of Microservices</h1>
+               <h2>Maximising autonomy for collaborating Microservices demands a sensible combination of choreography style with &ldquo;decentral orchestration&rdquo;.<span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
           </div>
      </section>
      <section>
@@ -90,6 +90,58 @@
                          <article class='post'>
                               <div class='post_content'>
                                    
+
+<p>Just imagine we add a very simple <em>customer notification service</em> to the example shown above. Such a service could send out emails on demand, e.g. when being asked so by the <em>order service</em> in the orchestration approach. Another, choreographed approach would be to let the customer configure how much information about the order fulfillment s/he wants to have in the inbox via a fully autonomous <em>customer notification service</em>.</p>
+
+<figure>
+    
+    
+    
+    
+    
+    
+    
+    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-customer-notification.png' >
+</figure>
+
+
+
+<p>The <em>customer notification service</em> listens to many different events. Based on the specific customer&rsquo;s notification settings, it will send out an email or a mobile push message informing the customer about the order fulfillment status - or not. Most importantly: such a service can now be created and improved without any interference with the other services.</p>
+
+<h1 id="3-microservices-collaboration-autonomy-needs-both-styles"><strong>(3) Microservices Collaboration</strong>: Autonomy Needs Both Styles</h1>
+
+<p>A less discussed problem that arises when relying too much on &ldquo;events only&rdquo; is again related to coupling: when using events we couple the subscriber of an event to an event type published by somebody else. Sometimes, this can be unfortunate: if it harms the autonomy of the coupled services more than it would be the case by coupling them via a <strong>command</strong>. To clarify, let&rsquo;s first clarify the terms event and command:</p>
+
+<ul>
+<li><p>An <strong>Event</strong> communicates a relevant fact of the business domain. The sender informs that something relevant occurred on its side.</p></li>
+
+<li><p>A <strong>Command</strong> communicates that a business domain relevant operation should happen on the recipient’s side.</p></li>
+</ul>
+
+<p>In order to judge whether we should couple two services via event or command, we can ask ourselves: which side of the communication is interested and  responsible to decide whether an event should be followed by another action? The responsible side should transform the event into a command. And it turns out, that organisationally the responsibility can very well be on both sides.</p>
+
+<p>[&hellip; some text missing &hellip;]</p>
+
+<ul>
+<li>Example: Change time for payment of</li>
+<li>Example: Change time for payment based on rules</li>
+<li>Fowler article mentioning event collaboration and request/reply collaboration.</li>
+</ul>
+
+<figure>
+    
+    
+    
+    
+    
+    
+    
+    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-collaboration.png' >
+</figure>
+
+
+
+<p>The notion of using commands tends a bit more in the direction of orchestration again.</p>
 
 <p>In my mind, there is a further disadvantage to <strong>purely</strong> &ldquo;event driven&rdquo; choreography approaches - and it is again related to the question of &ldquo;decoupling&rdquo; for autonomous delivery of changing requirements and fast deployment of new features. When we speak about &ldquo;nicely decoupled event driven systems&rdquo; we sometimes forget: some coupling is always needed. In case of event driven approaches, we of course couple the subscriber to the event: the subscriber needs to know to which events it reacts.</p>
 
@@ -113,6 +165,7 @@
                          <div class='bs-docs-sidebar hidden-print affix-top' role='complementary' data-spy='affix' data-offset-top='318' data-offset-bottom='405'>
                               <nav id="TableOfContents">
 <ul>
+<li><a href="#3-microservices-collaboration-autonomy-needs-both-styles"><strong>(3) Microservices Collaboration</strong>: Autonomy Needs Both Styles</a></li>
 <li><a href="#coupling-subscribers-to-events-can-be-bad-too">Coupling Subscribers to Events can be bad, too</a></li>
 <li><a href="#3-an-adaptive-collaboration-style"><strong>(3) An Adaptive Collaboration Style</strong></a></li>
 </ul>
@@ -129,7 +182,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 584  /  184 );
+                         var numbers = Math.ceil( 928  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <span class='read-the-discussion en'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                     </script>

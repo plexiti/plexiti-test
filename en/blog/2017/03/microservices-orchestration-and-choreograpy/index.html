@@ -6,7 +6,7 @@
   <meta charset='utf-8'>
   
       
-      <title>Microservices Collaboration Styles</title>
+      <title>Orchestration or Choreography? A Style Guide.</title>
       
   
     <link href='https://plexiti.github.io/plexiti-test/en/blog/index.xml' rel='alternate' type='application/rss+xml' title='plexiti - (de)coding domain knowledge blog' />
@@ -79,8 +79,8 @@
 <div class='main' id='post'>
      <section class='hgroup'>
           <div class='container'>
-               <h1>Microservices Collaboration Styles</h1>
-               <h2>When implementing logical flows along business processes, we can follow two styles of architecture: orchestration and choreography.<span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
+               <h1>Orchestration or Choreography? A Style Guide.</h1>
+               <h2>For collaboration of microservices, often two styles are pointed out we can follow: orchestration or choreography. But are there just those two?<span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
           </div>
      </section>
      <section>
@@ -91,11 +91,15 @@
                               <div class='post_content'>
                                    
 
-<p>In his well known book &ldquo;Building Microservices&rdquo;, Sam Newman wrote: &ldquo;As we start to model more and more complex logic, we have to deal with the problem of <strong>managing business processes that stretch across the boundary of individual services</strong>. [&hellip;] When it comes to actually implementing this <em>flow</em>, there are two styles of architecture we could follow. With <strong>orchestration</strong>, we rely on a central brain to guide and drive the process, much like the conductor in an <em>orchestra</em>. With <strong>choreography</strong>, we inform each part of the system of its job, and let it work out the details, like dancers all finding their way and reacting to others around them in a <em>ballet</em>.&rdquo;</p>
+<p>In his well-known book &ldquo;Building Microservices&rdquo;, <a href="https://twitter.com/samnewman">Sam Newman</a> wrote:</p>
+
+<blockquote>
+<p>&ldquo;As we start to model more and more complex logic, we have to deal with the problem of <strong>managing business processes that stretch across the boundary of individual services</strong>. [&hellip;] When it comes to actually implementing this <em>flow</em>, there are two styles of architecture we could follow. With <strong>orchestration</strong>, we rely on a central brain to guide and drive the process, much like the conductor in an <em>orchestra</em>. With <strong>choreography</strong>, we inform each part of the system of its job, and let it work out the details, like dancers all finding their way and reacting to others around them in a <em>ballet</em>.&rdquo;<cite>Sam Newman, &ldquo;Building Microservices&rdquo;</cite></p>
+</blockquote>
 
 <h1 id="1-the-orchestration-style"><strong>(1) The Orchestration Style</strong></h1>
 
-<p>With <strong>orchestration</strong> style, we move the rules governing the interaction among different services into a central, coordinating unit. By issuing requests and coordinating the meaning of the replies for further steps, this unit reminds a bit of the way a conductor interacts with an orchestra. :-)</p>
+<p>With <strong>orchestration</strong> style, we move the rules governing the interaction among different services into a central, coordinating unit. By invoking commands and coordinating the meaning of the results for further steps, this unit reminds a bit of the way a conductor interacts with an orchestra. :-)</p>
 
 <figure>
     
@@ -110,7 +114,9 @@
 
 
 
-<p>Let&rsquo;s work out a simple example. A customer <strong>places an order</strong> in a <em>webshop</em>. An <em>order service</em> coordinates the following process to fulfill the order. It communicates with three other services, dealing with <em>payment</em>, <em>inventory</em> and <em>shipment</em>:</p>
+<p>Orchestration style architectures will obviously rely on some <strong>command invocation</strong> mechanism. But note that such command invocation must not necessarily be implemented by means of some synchronous <em>request/reply</em>, it might also e.g. be realised via asynchronous command messages routed to other services via some kind of messaging infrastructure.</p>
+
+<p>Let&rsquo;s work out a simple example for orchestration. A customer <strong>places an order</strong> in a <em>webshop</em>. An <em>order service</em> coordinates the following process to fulfill the order. It communicates with three other services: they are dealing with <em>payment</em>, <em>inventory</em> and <em>shipment</em>:</p>
 
 <figure>
     
@@ -136,11 +142,11 @@
 <li>&hellip; the order service informs that the <strong>order is delivered</strong>.</li>
 </ol>
 
-<p>The whole <em>flow logic</em> for this order fulfillment resides in some central brain acting as the flow &ldquo;conductor&rdquo;. In our case this central brain is the order service, but it could also be centralised in an ESB.</p>
+<p>The whole <em>flow logic</em> for this order fulfillment resides in some central brain acting as the flow &ldquo;conductor&rdquo;. In our case this central brain is the order service.</p>
 
 <h1 id="2-the-choreography-style"><strong>(2) The Choreography Style</strong></h1>
 
-<p>With <strong>choreography</strong> style, the rules governing the interaction among different services move into the decentral units. The decentral services are interacting to reach the goal of a business process, each part of the system knows the job it is responsible for, and works out the details on its own.</p>
+<p>With <strong>choreography</strong> style, the rules governing the interaction among different services move into the decentral units. The decentral services are interacting to reach the goal of the business process, each part of the system knowing the job it is responsible for, and working out the needed details on its own.</p>
 
 <figure>
     
@@ -179,69 +185,27 @@
 <li>&hellip; and finally the <em>shipping service</em> will of course <strong>ship the parcel</strong>, when the items are fetched.</li>
 </ol>
 
-<p>While this will undoubtedly work, it&rsquo;s probably not a best practice example of making use of events. Even though I am a total fan of choreography and event based architectures (like: really), I have intentionally chosen an example which can serve to discuss some of the negative consequences we face when exaggerating such an approach. Let&rsquo;s therefore dig a bit into some of the tradeoffs we make when leaning towards either orchestration or choreography&hellip;</p>
+<p>The flow logic for the order fulfillment resides now inside the individual services. They need to work out on which events they need to react in which way themselves.</p>
 
-<h1 id="the-community-preference-towards-choreography">The Community Preference Towards Choreography</h1>
+<h1 id="pros-and-cons-of-the-two-styles">Pros and Cons of the Two Styles</h1>
+
+<p>An argument often cited in favor of orchestration is, that a central conductor can <strong>easily track the flow state</strong>. Sam Newman points that out, too: with choreography you might have to do some extra work just to monitor and track across system boundaries. However, the argument may vanish with better out-of-the-box tooling for choreographied architectures.</p>
+
+<p>Another argument in favor of orchestration may be that we can more <strong>easily implement the flow logic</strong>. Things like synchronizing parallel business activities, taking care of deadlines and timeouts or compensating business activities in case we need to &ldquo;roll back&rdquo; a flow may turn out to be easier when everything related to the flow is centralised.</p>
+
+<p>This argument must however be weighed against the observation that the central conductor in the orchestration approach can easily become &ldquo;too much&rdquo; of a central authority and a central point where most of the logic starts to live. Such tendencies work against an important selling point for doing microservices: <strong>easily adapt to changing business requirements</strong>.</p>
 
 <blockquote>
-<p>In general, I have found that systems that tend more toward the choreographed approach are more loosely coupled, and are more flexible and amenable to change [&hellip;]. I have found most heavily orchestrated implementations to be extremely brittle, with a higher cost of change.<cite>Sam Newman</cite></p>
+<p>In general, I have found that systems that tend more toward the choreographed approach are more loosely coupled, and are more flexible and amenable to change [&hellip;]. I have found most heavily orchestrated implementations to be extremely brittle, with a higher cost of change.<cite>Sam Newman, &ldquo;Building Microservices&rdquo;</cite></p>
 </blockquote>
 
-<p>I have no reason whatsoever to doubt that observation. I agree. Events are a great way to decouple services and increase the autonomy and &ldquo;replaceability&rdquo; of (micro-)services. Many things that were traditionally often done with an orchestration oriented mindset could be done more nicely decoupled and cleaner by going (much) more toward the choreographed approach.</p>
+<p>I tend to agree. Events are a great way to decouple services and increase the autonomy and &ldquo;replaceability&rdquo; of (micro)services. Many things that were traditionally often done with an orchestration oriented mindset could be done in a more decoupled and therefore more flexible manner by going (much) more toward the choreographed approach.</p>
 
-<p>The question remains: how far should we go in the direction of choreography? What are the tradeoffs guiding the decision?</p>
+<p>However, Sam Newman also suggests here that this is true <em>in general</em> and that systems may <em>tend</em> more toward one or more toward the other approach. This reminds us, that we have options and that we can <strong>mix</strong> the two styles in a way that <strong>matches</strong> our specific requirements.</p>
 
-<h1 id="pros-and-cons-of-orchestration-and-choreography">Pros and Cons of Orchestration and Choreography</h1>
+<h1 id="a-sensible-collaboration-style-in-the-middle">A Sensible <strong>Collaboration Style</strong> in the Middle?</h1>
 
-<p>An argument often cited <strong>pro orchestration</strong> is, that a central conductor can easily track the state of the overall flow. Sam Newman points that out, too: with choreography you might have to do some extra work to monitor and track across system boundaries. However, this is more a question of tooling to be done more appropriate for choreography.</p>
-
-<p>The central argument <strong>pro choreography</strong> is that the central conductor in the orchestration approach can easily become &ldquo;too much&rdquo; of a central authority and a central point where most of the logic starts to live. Sam Newman states that in practice he has seen this approach &ldquo;result in a small number of smart god services telling anemic CRUD-based services what to do&rdquo;. Such tendencies of course work against the very central selling points of microservices. Microservices should be as <strong>autonomous</strong> as possible and enable the teams maintaining them to deliver new business features as autonomous and fast as possible.</p>
-
-<p>Just imagine we add a very simple <em>customer notification service</em> to the example shown above. Such a service could send out emails on demand, e.g. when being asked so by the <em>order service</em> in the orchestration approach. Another, choreographed approach would be to let the customer configure how much information about the order fulfillment s/he wants to have in the inbox via a fully autonomous <em>customer notification service</em>.</p>
-
-<figure>
-    
-    
-    
-    
-    
-    
-    
-    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-customer-notification.png' >
-</figure>
-
-
-
-<p>The <em>customer notification service</em> listens to many different events. Based on the specific customer&rsquo;s notification settings, it will send out an email or a mobile push message informing the customer about the order fulfillment status - or not. Most importantly: such a service can now be created and improved without any interference with the other services.</p>
-
-<h1 id="3-microservices-collaboration-autonomy-needs-both-styles"><strong>(3) Microservices Collaboration</strong>: Autonomy Needs Both Styles</h1>
-
-<p>A less discussed problem that arises when relying too much on &ldquo;events only&rdquo; is again related to coupling: when using events we couple the subscriber of an event to an event type published by somebody else. Sometimes, this can be unfortunate: if it harms the autonomy of the coupled services more than it would be the case by coupling them via a <strong>command</strong>. To clarify, let&rsquo;s first clarify the terms event and command:</p>
-
-<ul>
-<li><p>An <strong>Event</strong> communicates a relevant fact of the business domain. The sender informs that something relevant occurred on its side.</p></li>
-
-<li><p>A <strong>Command</strong> communicates that a business domain relevant operation should happen on the recipient’s side.</p></li>
-</ul>
-
-<p>In order to judge whether we should couple two services via event or command, we can ask ourselves: which side of the communication is interested and  responsible to decide whether an event should be followed by another action? The responsible side should transform the event into a command. And it turns out, that organisationally the responsibility can very well be on both sides.</p>
-
-<p>[&hellip; some text missing &hellip;]</p>
-
-<figure>
-    
-    
-    
-    
-    
-    
-    
-    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-collaboration.png' >
-</figure>
-
-
-
-<p>The notion of using commands tends a bit more in the direction of orchestration again.</p>
+<p>I can now admit that I have <strong>intentionally chosen an example scenario</strong> which in my mind works best with a sensible combination of choreography style and an appropriate level of &ldquo;decentral orchestration&rdquo;. What I mean by that I will illustrate in another blogpost to be published soon.</p>
 
                               </div>
                          </article>
@@ -253,9 +217,8 @@
 <ul>
 <li><a href="#1-the-orchestration-style"><strong>(1) The Orchestration Style</strong></a></li>
 <li><a href="#2-the-choreography-style"><strong>(2) The Choreography Style</strong></a></li>
-<li><a href="#the-community-preference-towards-choreography">The Community Preference Towards Choreography</a></li>
-<li><a href="#pros-and-cons-of-orchestration-and-choreography">Pros and Cons of Orchestration and Choreography</a></li>
-<li><a href="#3-microservices-collaboration-autonomy-needs-both-styles"><strong>(3) Microservices Collaboration</strong>: Autonomy Needs Both Styles</a></li>
+<li><a href="#pros-and-cons-of-the-two-styles">Pros and Cons of the Two Styles</a></li>
+<li><a href="#a-sensible-collaboration-style-in-the-middle">A Sensible <strong>Collaboration Style</strong> in the Middle?</a></li>
 </ul>
 </nav>
                          </div>
@@ -270,7 +233,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 1226  /  184 );
+                         var numbers = Math.ceil( 991  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <span class='read-the-discussion en'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                     </script>

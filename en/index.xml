@@ -16,21 +16,21 @@
     <atom:link href="https://plexiti.github.io/plexiti-test/en/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Decoupling Event Driven Hippies</title>
+      <title>Avoiding Accidental Coupling of Microservices</title>
       <link>https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/</link>
       <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
       <author>Martin Schimak</author>
       <guid>https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/</guid>
-      <description></description>
+      <description>Maximising autonomy for collaborating Microservices demands a sensible combination of choreography style with &amp;ldquo;decentral orchestration&amp;rdquo;.</description>
     </item>
     
     <item>
-      <title>Microservices Collaboration Styles</title>
+      <title>Orchestration or Choreography? A Style Guide.</title>
       <link>https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/</link>
       <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
       <author>Martin Schimak</author>
       <guid>https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/</guid>
-      <description>When implementing logical flows along business processes, we can follow two styles of architecture: orchestration and choreography.</description>
+      <description>For collaboration of microservices, often two styles are pointed out we can follow: orchestration or choreography. But are there just those two?</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@
     </item>
     
     <item>
-      <title>Get Started with Camunda BPM Assert Scenario</title>
+      <title>Get Started with Camunda Assert Scenario</title>
       <link>https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/</link>
       <pubDate>Sat, 17 Sep 2016 09:00:00 +0200</pubDate>
       <author>Martin Schimak</author>

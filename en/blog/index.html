@@ -77,9 +77,8 @@
           
           
           <div class='container'>
-               <h1 id='1cbd24a346313540ae6aac7191f9efe6'><a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/'>Decoupling Event Driven Hippies</a></h1>
-               <h2>
-</h2>
+               <h1 id='1cbd24a346313540ae6aac7191f9efe6'><a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/'>Avoiding Accidental Coupling of Microservices</a></h1>
+               <h2> Maximising autonomy for collaborating Microservices demands a sensible combination of choreography style with &#34;decentral orchestration&#34;. </h2>
           </div>
           
      </section>
@@ -97,7 +96,59 @@
                                        <img src='https://plexiti.github.io/plexiti-test/en/'></img>
                                      </figure>
                                    </a>
-                                   <p><p>In my mind, there is a further disadvantage to <strong>purely</strong> &ldquo;event driven&rdquo; choreography approaches - and it is again related to the question of &ldquo;decoupling&rdquo; for autonomous delivery of changing requirements and fast deployment of new features. When we speak about &ldquo;nicely decoupled event driven systems&rdquo; we sometimes forget: some coupling is always needed. In case of event driven approaches, we of course couple the subscriber to the event: the subscriber needs to know to which events it reacts.</p>
+                                   <p><p>Just imagine we add a very simple <em>customer notification service</em> to the example shown above. Such a service could send out emails on demand, e.g. when being asked so by the <em>order service</em> in the orchestration approach. Another, choreographed approach would be to let the customer configure how much information about the order fulfillment s/he wants to have in the inbox via a fully autonomous <em>customer notification service</em>.</p>
+
+<figure>
+    
+    
+    
+    
+    
+    
+    
+    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-customer-notification.png' >
+</figure>
+
+
+
+<p>The <em>customer notification service</em> listens to many different events. Based on the specific customer&rsquo;s notification settings, it will send out an email or a mobile push message informing the customer about the order fulfillment status - or not. Most importantly: such a service can now be created and improved without any interference with the other services.</p>
+
+<h1 id="3-microservices-collaboration-autonomy-needs-both-styles"><strong>(3) Microservices Collaboration</strong>: Autonomy Needs Both Styles</h1>
+
+<p>A less discussed problem that arises when relying too much on &ldquo;events only&rdquo; is again related to coupling: when using events we couple the subscriber of an event to an event type published by somebody else. Sometimes, this can be unfortunate: if it harms the autonomy of the coupled services more than it would be the case by coupling them via a <strong>command</strong>. To clarify, let&rsquo;s first clarify the terms event and command:</p>
+
+<ul>
+<li><p>An <strong>Event</strong> communicates a relevant fact of the business domain. The sender informs that something relevant occurred on its side.</p></li>
+
+<li><p>A <strong>Command</strong> communicates that a business domain relevant operation should happen on the recipient’s side.</p></li>
+</ul>
+
+<p>In order to judge whether we should couple two services via event or command, we can ask ourselves: which side of the communication is interested and  responsible to decide whether an event should be followed by another action? The responsible side should transform the event into a command. And it turns out, that organisationally the responsibility can very well be on both sides.</p>
+
+<p>[&hellip; some text missing &hellip;]</p>
+
+<ul>
+<li>Example: Change time for payment of</li>
+<li>Example: Change time for payment based on rules</li>
+<li>Fowler article mentioning event collaboration and request/reply collaboration.</li>
+</ul>
+
+<figure>
+    
+    
+    
+    
+    
+    
+    
+    <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-collaboration.png' >
+</figure>
+
+
+
+<p>The notion of using commands tends a bit more in the direction of orchestration again.</p>
+
+<p>In my mind, there is a further disadvantage to <strong>purely</strong> &ldquo;event driven&rdquo; choreography approaches - and it is again related to the question of &ldquo;decoupling&rdquo; for autonomous delivery of changing requirements and fast deployment of new features. When we speak about &ldquo;nicely decoupled event driven systems&rdquo; we sometimes forget: some coupling is always needed. In case of event driven approaches, we of course couple the subscriber to the event: the subscriber needs to know to which events it reacts.</p>
 </p>
                                    <a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/' class='btn btn-primary'>Read more</a>
                               </div>
@@ -106,8 +157,8 @@
                          <article class='post'>
                               
                                    <div class='hgroup'>
-                                        <h1 id='77eb181b8f2c13070d2afa81b48d2f5c'><a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/'>Microservices Collaboration Styles</a></h1>
-                                        <h2> When implementing logical flows along business processes, we can follow two styles of architecture: orchestration and choreography. </h2>
+                                        <h1 id='77eb181b8f2c13070d2afa81b48d2f5c'><a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/'>Orchestration or Choreography? A Style Guide.</a></h1>
+                                        <h2> For collaboration of microservices, often two styles are pointed out we can follow: orchestration or choreography. But are there just those two? </h2>
                                    </div>
                               
                               <div class='post_content'>
@@ -117,7 +168,11 @@
                                        <img src='https://plexiti.github.io/plexiti-test/en/./blog/2017/03/img/microservices-orchestration-and-choreograpy.png'></img>
                                      </figure>
                                    </a>
-                                   <p><p>In his well known book &ldquo;Building Microservices&rdquo;, Sam Newman wrote: &ldquo;As we start to model more and more complex logic, we have to deal with the problem of <strong>managing business processes that stretch across the boundary of individual services</strong>. [&hellip;] When it comes to actually implementing this <em>flow</em>, there are two styles of architecture we could follow. With <strong>orchestration</strong>, we rely on a central brain to guide and drive the process, much like the conductor in an <em>orchestra</em>. With <strong>choreography</strong>, we inform each part of the system of its job, and let it work out the details, like dancers all finding their way and reacting to others around them in a <em>ballet</em>.&rdquo;</p>
+                                   <p><p>In his well-known book &ldquo;Building Microservices&rdquo;, [Sam Newman][1] wrote:</p>
+
+<blockquote>
+<p>&ldquo;As we start to model more and more complex logic, we have to deal with the problem of <strong>managing business processes that stretch across the boundary of individual services</strong>. [&hellip;] When it comes to actually implementing this <em>flow</em>, there are two styles of architecture we could follow. With <strong>orchestration</strong>, we rely on a central brain to guide and drive the process, much like the conductor in an <em>orchestra</em>. With <strong>choreography</strong>, we inform each part of the system of its job, and let it work out the details, like dancers all finding their way and reacting to others around them in a <em>ballet</em>.&rdquo;<cite>Sam Newman, &ldquo;Building Microservices&rdquo;</cite></p>
+</blockquote>
 </p>
                                    <a href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/' class='btn btn-primary'>Read more</a>
                               </div>
@@ -166,7 +221,7 @@
                          <article class='post'>
                               
                                    <div class='hgroup'>
-                                        <h1 id='cc351e45b8d4291140a579148869cf29'><a href='https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/'>Get Started with Camunda BPM Assert Scenario</a></h1>
+                                        <h1 id='cc351e45b8d4291140a579148869cf29'><a href='https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/'>Get Started with Camunda Assert Scenario</a></h1>
                                         <h2> This blog post is the first one in a small series of blog posts about &#34;scenario&#34;-testing. </h2>
                                    </div>
                               
@@ -192,15 +247,15 @@
                                              <li><span><i class='fa fa-hand-o-right' aria-hidden='true'></i>&nbsp;Read the <strong>newest</strong> posts &hellip;</span></li>
                                         
                                         
-                                        <li><a href='#1cbd24a346313540ae6aac7191f9efe6' data-href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/'>Decoupling Event Driven Hippies</a></li>
+                                        <li><a href='#1cbd24a346313540ae6aac7191f9efe6' data-href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/decoupling-event-driven-microservices/'>Avoiding Accidental Coupling of Microservices</a></li>
                                         
-                                        <li><a href='#77eb181b8f2c13070d2afa81b48d2f5c' data-href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/'>Microservices Collaboration Styles</a></li>
+                                        <li><a href='#77eb181b8f2c13070d2afa81b48d2f5c' data-href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/'>Orchestration or Choreography? A Style Guide.</a></li>
                                         
                                         <li><a href='#8ec6b2cbf4523d16bdef0f884803c816' data-href='https://plexiti.github.io/plexiti-test/en/blog/2017/03/sorting-out-terms-for-remote-communication/'>Sorting out Terms for Remote Communication</a></li>
                                         
                                         <li><a href='#01f6536d9c2700c88ec40afa19bd5c99' data-href='https://plexiti.github.io/plexiti-test/en/blog/2016/09/understanding-process-waitstate-mocking/'>Understanding Process &#34;Waitstate Mocking&#34;</a></li>
                                         
-                                        <li><a href='#cc351e45b8d4291140a579148869cf29' data-href='https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/'>Get Started with Camunda BPM Assert Scenario</a></li>
+                                        <li><a href='#cc351e45b8d4291140a579148869cf29' data-href='https://plexiti.github.io/plexiti-test/en/blog/2016/09/get-started-with-camunda-bpm-assert-scenario/'>Get Started with Camunda Assert Scenario</a></li>
                                         
                                         
                                              <li><a href='https://plexiti.github.io/plexiti-test/en/blog/page/2/'><i class='fa fa-hand-o-down' aria-hidden='true'></i>&nbsp;Read <strong>older</strong> posts &hellip;</a></li>
