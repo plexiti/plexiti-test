@@ -80,7 +80,7 @@
      <section class='hgroup'>
           <div class='container'>
                <h1>Orchestration or Choreography? A Style Guide.</h1>
-               <h2>For collaboration of microservices, often two styles are pointed out we can follow: orchestration or choreography. But are there just those two?<span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
+               <h2>For collaboration of microservices, there are two basic styles: orchestration and choreography. But when to use what? Is that an either or decision?<span style='float:right'><script>document.write(moment('2017-03-21').locale('en').format('LL'))</script></span></h2>
           </div>
      </section>
      <section>
@@ -114,7 +114,7 @@
 
 
 
-<p>Orchestration style architectures will obviously rely on some <strong>command invocation</strong> mechanism. But note that such command invocation must not necessarily be implemented by means of some synchronous <em>request/reply</em>, it might also e.g. be realised via asynchronous command messages routed to other services via some kind of messaging infrastructure.</p>
+<p>Orchestration style architectures will therefore rely on some <strong>command invocation</strong> mechanism. But note that such command invocation must not necessarily be implemented by means of some synchronous <em>request/reply</em>. It might e.g. be realised via <em>asynchronous command messages</em> routed to other services via some kind of messaging infrastructure. It might also be implemented via an &ldquo;ask for work&rdquo; (pull) mechanism, which lets the other services retrieve the commands to be carried out by themselves.</p>
 
 <p>Let&rsquo;s work out a simple example for orchestration. A customer <strong>places an order</strong> in a <em>webshop</em>. An <em>order service</em> coordinates the following process to fulfill the order. It communicates with three other services: they are dealing with <em>payment</em>, <em>inventory</em> and <em>shipment</em>:</p>
 
@@ -201,11 +201,11 @@
 
 <p>I tend to agree. Events are a great way to decouple services and increase the autonomy and &ldquo;replaceability&rdquo; of (micro)services. Many things that were traditionally often done with an orchestration oriented mindset could be done in a more decoupled and therefore more flexible manner by going (much) more toward the choreographed approach.</p>
 
-<p>However, Sam Newman also suggests here that this is true <em>in general</em> and that systems may <em>tend</em> more toward one or more toward the other approach. This reminds us, that we have options and that we can <strong>mix</strong> the two styles in a way that <strong>matches</strong> our specific requirements.</p>
+<p>However, Sam Newman also suggests here that this is true &ldquo;in general&rdquo; and that systems may &ldquo;tend&rdquo; more toward one or more toward the other approach. This reminds us, that we have options and that we can <strong>mix</strong> the two styles in a way that <strong>matches</strong> our specific requirements.</p>
 
 <h1 id="a-sensible-collaboration-style-in-the-middle">A Sensible <strong>Collaboration Style</strong> in the Middle?</h1>
 
-<p>I can now admit that I have <strong>intentionally chosen an example scenario</strong> which in my mind works best with a sensible combination of choreography style and an appropriate level of &ldquo;decentral orchestration&rdquo;. What I mean by that I will illustrate in another blogpost to be published soon.</p>
+<p>I can now admit that I have <strong>intentionally chosen an example scenario</strong> which in my mind works best with a sensible combination of choreography style and an appropriate level of &ldquo;decentral orchestration&rdquo;. What I mean by that I will illustrate in another blogpost to be published soon! :-)</p>
 
                               </div>
                          </article>
@@ -233,7 +233,7 @@
                               this.className = "nav";
                          });
                          
-                         var numbers = Math.ceil( 990  /  184 );
+                         var numbers = Math.ceil( 1016  /  184 );
                          $('#TableOfContents ul').prepend("<li><a href='#post'><i class='fa fa-hand-o-right' aria-hidden='true'></i> Read this post in about <span class='read-the-discussion en'><b>" + numbers + "<i class='pl'></i></b></span>&nbsp;...</a></li>");
                          
                     </script>

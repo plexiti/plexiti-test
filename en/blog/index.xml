@@ -30,7 +30,7 @@
       <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
       <author>Martin Schimak</author>
       <guid>https://plexiti.github.io/plexiti-test/en/blog/2017/03/microservices-orchestration-and-choreograpy/</guid>
-      <description>For collaboration of microservices, often two styles are pointed out we can follow: orchestration or choreography. But are there just those two?</description>
+      <description>For collaboration of microservices, there are two basic styles: orchestration and choreography. But when to use what? Is that an either or decision?</description>
     </item>
     
     <item>
