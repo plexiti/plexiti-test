@@ -11,9 +11,18 @@
     
     
     
-    <lastBuildDate>Fri, 10 Mar 2017 19:44:26 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 21 Mar 2017 09:00:00 +0100</lastBuildDate>
     
     <atom:link href="https://plexiti.github.io/plexiti-test/de/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Orchestration or Choreography? A Style Guide.</title>
+      <link>https://plexiti.github.io/plexiti-test/de/blog/2017/03/microservices-orchestration-and-choreograpy/</link>
+      <pubDate>Tue, 21 Mar 2017 09:00:00 +0100</pubDate>
+      <author>Martin Schimak</author>
+      <guid>https://plexiti.github.io/plexiti-test/de/blog/2017/03/microservices-orchestration-and-choreograpy/</guid>
+      <description>For collaboration of microservices, there are two basic styles: orchestration and choreography. But when to use what? Is that an either or decision?</description>
+    </item>
     
     <item>
       <title>Sorting out Terms for Remote Communication</title>
